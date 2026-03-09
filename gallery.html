@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="View stunning before and after smile transformation photos at Dr. Aanchal Dental Clinic — whitening, implants, veneers, Invisalign, and more." />
+  <title>Smile Gallery | Dr. Aanchal Dental Clinic</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <style>
+    .filter-bar { display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-bottom:40px; }
+    .filter-btn { padding:8px 20px;border-radius:50px;border:1.5px solid var(--color-border);background:transparent;font-size:0.85rem;font-weight:600;color:var(--color-text-muted);cursor:pointer;transition:var(--transition); }
+    .filter-btn:hover,.filter-btn.active { background:var(--color-primary);border-color:var(--color-primary);color:#fff; }
+    .gallery-large { display:grid;grid-template-columns:repeat(3,1fr);gap:20px; }
+    .gallery-item-lg { border-radius:16px;overflow:hidden;position:relative;aspect-ratio:4/3;background:var(--color-secondary);cursor:pointer; }
+    .gallery-item-lg.tall { grid-row:span 2;aspect-ratio:unset; }
+    .g-placeholder { width:100%;height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;background:linear-gradient(135deg,var(--color-secondary),#e4d9cc); }
+    .g-placeholder .icon { font-size:3rem; }
+    .g-placeholder h4 { font-family:var(--font-heading);font-size:0.95rem;font-weight:600;color:var(--color-text-muted);text-align:center; }
+    .g-placeholder p { font-size:0.75rem;color:var(--color-text-light);text-align:center;padding:0 16px; }
+    .gallery-item-lg .overlay { position:absolute;inset:0;background:linear-gradient(to top,rgba(140,106,74,0.88),transparent 50%);opacity:0;transition:opacity 0.35s ease-out;display:flex;align-items:flex-end;padding:20px; }
+    .gallery-item-lg:hover .overlay { opacity:1; }
+    .overlay-text h4 { color:#fff;font-family:var(--font-heading);font-size:1rem;font-weight:600;margin-bottom:4px; }
+    .overlay-text p { color:rgba(255,255,255,0.75);font-size:0.78rem; }
+    @media(max-width:900px){.gallery-large{grid-template-columns:repeat(2,1fr);} .gallery-item-lg.tall{grid-row:span 1;aspect-ratio:4/3;}}
+    @media(max-width:600px){.gallery-large{grid-template-columns:1fr;} .gallery-item-lg.tall{aspect-ratio:4/3;}}
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
+  <div class="navbar__inner">
+    <a href="index.html" class="navbar__logo">
+      <div class="navbar__logo-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2C9 2 6 4 6 7c0 2 .5 3.5 1 5 .5 1.5 1 3 1 5 0 1.5.5 3 2 3s2-1.5 2-3c0-.5.2-1 .5-1 .3 0 .5.5.5 1 0 1.5.5 3 2 3s2-1.5 2-3c0-2 .5-3.5 1-5 .5-1.5 1-3 1-5 0-3-3-5-6-5z"/></svg></div>
+      <div class="navbar__logo-text"><span>Dr. Aanchal</span><span>Dental Clinic</span></div>
+    </a>
+    <ul class="navbar__nav">
+      <li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li>
+      <li><a href="services.html">Services</a></li><li><a href="gallery.html" class="active">Gallery</a></li>
+      <li><a href="blog.html">Blog</a></li><li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="navbar__cta"><a href="index.html#appointment" class="btn btn-primary btn-sm">Book Appointment</a></div>
+    <button class="navbar__hamburger" id="hamburger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+<nav class="navbar__mobile" id="mobileNav">
+  <a href="index.html">Home</a><a href="about.html">About</a><a href="services.html">Services</a><a href="gallery.html">Gallery</a><a href="blog.html">Blog</a><a href="contact.html">Contact</a>
+  <a href="index.html#appointment" class="btn btn-primary" style="margin-top:8px">Book Appointment</a>
+</nav>
+
+<!-- Page Hero -->
+<section class="page-hero">
+  <div class="container">
+    <span class="page-hero__label">Smile Transformations</span>
+    <h1 class="page-hero__title">Before &amp; After Gallery</h1>
+    <p class="page-hero__desc">Real patients, real results. Every smile tells a story of confidence restored.</p>
+  </div>
+</section>
+
+<!-- Result Stats -->
+<section style="background:var(--color-secondary);padding:48px 0;">
+  <div class="container">
+    <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:24px;text-align:center;">
+      <div class="reveal"><div style="font-family:var(--font-heading);font-size:2rem;font-weight:700;color:var(--color-primary)" data-count="2500" data-suffix="+">2500+</div><div style="font-size:0.85rem;color:var(--color-text-muted);text-transform:uppercase;letter-spacing:0.06em;margin-top:4px;">Smiles Transformed</div></div>
+      <div class="reveal reveal-delay-1"><div style="font-family:var(--font-heading);font-size:2rem;font-weight:700;color:var(--color-primary)" data-count="98" data-suffix="%">98%</div><div style="font-size:0.85rem;color:var(--color-text-muted);text-transform:uppercase;letter-spacing:0.06em;margin-top:4px;">Satisfaction Rate</div></div>
+      <div class="reveal reveal-delay-2"><div style="font-family:var(--font-heading);font-size:2rem;font-weight:700;color:var(--color-primary)" data-count="10" data-suffix="+">10+</div><div style="font-size:0.85rem;color:var(--color-text-muted);text-transform:uppercase;letter-spacing:0.06em;margin-top:4px;">Years of Excellence</div></div>
+      <div class="reveal reveal-delay-3"><div style="font-family:var(--font-heading);font-size:2rem;font-weight:700;color:var(--color-primary)" data-count="8" data-suffix="+">8+</div><div style="font-size:0.85rem;color:var(--color-text-muted);text-transform:uppercase;letter-spacing:0.06em;margin-top:4px;">Treatments Offered</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- Gallery -->
+<section class="section">
+  <div class="container">
+    <div class="section-header section-header--center">
+      <span class="section-label">Our Gallery</span>
+      <h2 class="section-title">Amazing <em>Smile Results</em></h2>
+      <div class="divider divider--center"></div>
+    </div>
+
+    <div class="filter-bar" role="group" aria-label="Gallery filter">
+      <button class="filter-btn active">All</button>
+      <button class="filter-btn">Whitening</button>
+      <button class="filter-btn">Implants</button>
+      <button class="filter-btn">Veneers</button>
+      <button class="filter-btn">Invisalign</button>
+      <button class="filter-btn">Braces</button>
+      <button class="filter-btn">Smile Makeover</button>
+    </div>
+
+    <div class="gallery-large">
+      <div class="gallery-item-lg tall reveal">
+        <div class="g-placeholder"><span class="icon">✨</span><h4>Teeth Whitening</h4><p>8 shades brighter in one session</p></div>
+        <div class="overlay"><div class="overlay-text"><h4>Teeth Whitening</h4><p>Age 32 • 1 session • 8 shades brighter</p></div></div>
+      </div>
+      <div class="gallery-item-lg reveal">
+        <div class="g-placeholder"><span class="icon">💎</span><h4>Porcelain Veneers</h4><p>Complete smile redesign</p></div>
+        <div class="overlay"><div class="overlay-text"><h4>Porcelain Veneers</h4><p>Age 27 • 8 veneers • Hollywood smile</p></div></div>
+      </div>
+      <div class="gallery-item-lg reveal reveal-delay-1">
+        <div class="g-placeholder"><span class="icon">😁</span><h4>Invisalign</h4><p>Straight teeth discreetly</p></div>
+        <div class="overlay"><div class="overlay-text"><h4>Invisalign Treatment</h4><p>Age 24 • 12 months • Perfect alignment</p></div></div>
+      </div>
+      <div class="gallery-item-lg reveal">
+        <div class="g-placeholder"><span class="icon">🦷</span><h4>Dental Implants</h4><p>Permanent natural-looking result</p></div>
+        <div class="overlay"><div class="overlay-text"><h4>Dental Implants</h4><p>Age 45 • 2 implants • Permanent fix</p></div></div>
+      </div>
+      <div class="gallery-item-lg tall reveal reveal-delay-1">
+        <div class="g-placeholder"><span class="icon">🌟</span><h4>Full Smile Makeover</h4><p>Complete transformation</p></div>
+        <div class="overlay"><div class="overlay-text"><h4>Full Smile Makeover</h4><p>Age 38 • 3-month plan • Life-changing</p></div></div>
+      </div>
+      <div class="gallery-item-lg reveal reveal-delay-2">
+        <div class="g-placeholder"><span class="icon">😬</span><h4>Ceramic Braces</h4><p>Aesthetic alignment</p></div>
+        <div class="overlay"><div class="overlay-text"><h4>Ceramic Braces</h4><p>Age 19 • 18 months • Beautiful result</p></div></div>
+      </div>
+      <div class="gallery-item-lg reveal">
+        <div class="g-placeholder"><span class="icon">🏆</span><h4>Gum Contouring</h4><p>Perfect gum line</p></div>
+        <div class="overlay"><div class="overlay-text"><h4>Gum Contouring</h4><p>Age 30 • 1 session • Balanced smile</p></div></div>
+      </div>
+      <div class="gallery-item-lg reveal reveal-delay-1">
+        <div class="g-placeholder"><span class="icon">✨</span><h4>Composite Bonding</h4><p>Chips &amp; gaps repaired</p></div>
+        <div class="overlay"><div class="overlay-text"><h4>Composite Bonding</h4><p>Age 22 • Single visit • Natural look</p></div></div>
+      </div>
+      <div class="gallery-item-lg reveal reveal-delay-2">
+        <div class="g-placeholder"><span class="icon">💛</span><h4>Smile Redesign</h4><p>Confidence restored</p></div>
+        <div class="overlay"><div class="overlay-text"><h4>Complete Redesign</h4><p>Age 55 • Full rehab • Stunning result</p></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section style="background:linear-gradient(135deg,#1a1210,#2d1f14);padding:80px 0;text-align:center;">
+  <div class="container">
+    <h2 class="section-title" style="color:#fff;margin-bottom:16px;">Your Transformation <em>Awaits</em></h2>
+    <p style="color:rgba(255,255,255,0.65);max-width:500px;margin:0 auto 32px;">Book a consultation with Dr. Aanchal to begin your journey toward a confident, beautiful smile.</p>
+    <a href="index.html#appointment" class="btn btn-primary">Book Your Consultation</a>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer" role="contentinfo">
+  <div class="container">
+    <div class="footer__top">
+      <div><div class="footer__brand-name">Dr. Aanchal</div><span class="footer__brand-tagline">Creating Confident Smiles</span><p class="footer__brand-desc">Advanced cosmetic and general dentistry in a modern, caring environment.</p><div class="footer__social"><a href="#" class="social-link">f</a><a href="#" class="social-link">in</a><a href="#" class="social-link">tw</a></div></div>
+      <div><h4 class="footer__col-title">Quick Links</h4><ul class="footer__links"><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="services.html">Services</a></li><li><a href="gallery.html">Gallery</a></li><li><a href="blog.html">Blog</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+      <div><h4 class="footer__col-title">Treatments</h4><ul class="footer__links"><li><a href="services.html">Teeth Whitening</a></li><li><a href="services.html">Dental Implants</a></li><li><a href="services.html">Root Canal</a></li><li><a href="services.html">Smile Makeover</a></li><li><a href="services.html">Invisalign</a></li><li><a href="services.html">Braces</a></li></ul></div>
+      <div><h4 class="footer__col-title">Contact</h4><ul class="footer__links" style="gap:14px;"><li style="color:rgba(255,255,255,0.5);font-size:0.88rem;">📍 Sector 12, New Delhi</li><li><a href="tel:+919876500000" style="color:rgba(255,255,255,0.5);font-size:0.88rem;">📞 +91 98765 XXXXX</a></li><li><a href="mailto:hello@draanchal.in" style="color:rgba(255,255,255,0.5);font-size:0.88rem;">✉️ hello@draanchal.in</a></li></ul></div>
+    </div>
+    <div class="footer__bottom"><span>&copy; 2026 Dr. Aanchal Dental Clinic. All rights reserved.</span></div>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+<script>
+  // Filter buttons (visual only since images are placeholders)
+  document.querySelectorAll('.filter-btn').forEach(btn => {
+    btn.addEventListener('click', function() {
+      document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+      this.classList.add('active');
+    });
+  });
+</script>
+</body>
+</html>

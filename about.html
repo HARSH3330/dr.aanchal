@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Learn about Dr. Aanchal — a highly experienced cosmetic and general dentist with over 10 years of clinical expertise in modern, pain-free dentistry." />
+  <title>About Dr. Aanchal | Expert Dental Care</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <style>
+    .timeline { position: relative; padding-left: 32px; }
+    .timeline::before { content:''; position:absolute; left:8px; top:0; bottom:0; width:2px; background: linear-gradient(to bottom, var(--color-primary), transparent); }
+    .timeline-item { position:relative; padding-bottom:32px; }
+    .timeline-item::before { content:''; position:absolute; left:-28px; top:6px; width:14px; height:14px; border-radius:50%; background:var(--color-primary); border:3px solid #fff; box-shadow:0 0 0 2px var(--color-primary); }
+    .timeline-year { font-size:0.78rem; font-weight:700; color:var(--color-primary); text-transform:uppercase; letter-spacing:0.08em; margin-bottom:4px; }
+    .timeline-title { font-family:var(--font-heading); font-size:1rem; font-weight:600; color:var(--color-text); margin-bottom:4px; }
+    .timeline-desc { font-size:0.88rem; color:var(--color-text-muted); line-height:1.65; }
+    .values-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:24px; }
+    @media(max-width:768px){.values-grid{grid-template-columns:1fr;}}
+    @media(max-width:900px){.values-grid{grid-template-columns:repeat(2,1fr);}}
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
+  <div class="navbar__inner">
+    <a href="index.html" class="navbar__logo" aria-label="Dr. Aanchal Dental Clinic home">
+      <div class="navbar__logo-icon" aria-hidden="true">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2C9 2 6 4 6 7c0 2 .5 3.5 1 5 .5 1.5 1 3 1 5 0 1.5.5 3 2 3s2-1.5 2-3c0-.5.2-1 .5-1 .3 0 .5.5.5 1 0 1.5.5 3 2 3s2-1.5 2-3c0-2 .5-3.5 1-5 .5-1.5 1-3 1-5 0-3-3-5-6-5z"/></svg>
+      </div>
+      <div class="navbar__logo-text">
+        <span>Dr. Aanchal</span>
+        <span>Dental Clinic</span>
+      </div>
+    </a>
+    <ul class="navbar__nav" role="list">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html" class="active">About</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="navbar__cta"><a href="index.html#appointment" class="btn btn-primary btn-sm">Book Appointment</a></div>
+    <button class="navbar__hamburger" id="hamburger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+<nav class="navbar__mobile" id="mobileNav" aria-label="Mobile navigation">
+  <a href="index.html">Home</a><a href="about.html">About</a><a href="services.html">Services</a><a href="gallery.html">Gallery</a><a href="blog.html">Blog</a><a href="contact.html">Contact</a>
+  <a href="index.html#appointment" class="btn btn-primary" style="margin-top:8px">Book Appointment</a>
+</nav>
+
+<!-- Page Hero -->
+<section class="page-hero" aria-label="About page hero">
+  <div class="container">
+    <span class="page-hero__label">About the Doctor</span>
+    <h1 class="page-hero__title">Meet Dr. Aanchal</h1>
+    <p class="page-hero__desc">A passionate dentist committed to creating healthy, beautiful smiles with gentle, modern care.</p>
+  </div>
+</section>
+
+<!-- Doctor Profile -->
+<section class="section" aria-labelledby="doctor-title">
+  <div class="container">
+    <div class="about__grid" style="display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center;">
+
+      <div class="about__image-wrap reveal">
+        <div style="width:100%;height:540px;background:linear-gradient(135deg,#f6f3ef,#e8ddd4);border-radius:16px;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:16px;">
+          <svg width="100" height="110" viewBox="0 0 24 24" fill="none" stroke="#C8A47E" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+          <p style="font-family:'Playfair Display',serif;font-size:1.2rem;color:#8C6A4A;font-weight:600;">Dr. Aanchal</p>
+          <p style="font-size:0.85rem;color:#9A9A9A;letter-spacing:0.06em;text-transform:uppercase;">BDS · MDS · Fellowship</p>
+        </div>
+        <div class="about__badge">
+          <div class="about__badge-icon" aria-hidden="true">⭐</div>
+          <div class="about__badge-text"><span>IDA Member</span><span>Certified Specialist</span></div>
+        </div>
+      </div>
+
+      <div class="about__content reveal reveal-delay-2">
+        <span class="section-label">Our Doctor</span>
+        <h2 class="section-title" id="doctor-title">Dedicated to Your <em>Dental Health</em></h2>
+        <div class="divider" aria-hidden="true"></div>
+        <p class="about__bio">Dr. Aanchal is a highly accomplished cosmetic and general dentist with over 10 years of clinical experience. She completed her BDS with distinction and went on to earn an MDS in Oral and Maxillofacial Surgery, followed by a prestigious Fellowship in Cosmetic Dentistry.</p>
+        <p class="about__bio" style="margin-top:12px;">Her philosophy is simple: every patient deserves personalised, compassionate care in a comfortable environment. She continuously updates her skills with the latest advancements in dental technology to ensure her patients receive world-class treatment.</p>
+        <p class="about__bio" style="margin-top:12px;">Outside the clinic, Dr. Aanchal is a passionate dental educator, regularly conducting workshops and awareness programmes on oral hygiene in the community.</p>
+
+        <div class="about__stats" style="margin-top:24px;">
+          <div><div class="about__stat-num" data-count="10" data-suffix="+">10+</div><div class="about__stat-label">Years Exp.</div></div>
+          <div><div class="about__stat-num" data-count="2500" data-suffix="+">2500+</div><div class="about__stat-label">Patients</div></div>
+          <div><div class="about__stat-num" data-count="98" data-suffix="%">98%</div><div class="about__stat-label">Satisfaction</div></div>
+        </div>
+        <a href="index.html#appointment" class="btn btn-primary" style="margin-top:24px;">Book a Consultation</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Core Values -->
+<section class="section section--alt" aria-labelledby="values-title">
+  <div class="container">
+    <div class="section-header section-header--center">
+      <span class="section-label">Our Philosophy</span>
+      <h2 class="section-title" id="values-title">What We <em>Believe In</em></h2>
+      <div class="divider divider--center" aria-hidden="true"></div>
+    </div>
+    <div class="values-grid">
+      <div class="feature-card reveal">
+        <div class="feature-card__icon" aria-hidden="true">🤝</div>
+        <h3 class="feature-card__title">Patient-First Approach</h3>
+        <p class="feature-card__desc">Every decision we make prioritises your comfort, health, and long-term wellbeing above everything else.</p>
+      </div>
+      <div class="feature-card reveal reveal-delay-1">
+        <div class="feature-card__icon" aria-hidden="true">💡</div>
+        <h3 class="feature-card__title">Continuous Learning</h3>
+        <p class="feature-card__desc">We invest in ongoing education and the latest dental technology to bring you the most advanced care available.</p>
+      </div>
+      <div class="feature-card reveal reveal-delay-2">
+        <div class="feature-card__icon" aria-hidden="true">🌿</div>
+        <h3 class="feature-card__title">Honest Treatment</h3>
+        <p class="feature-card__desc">We only recommend treatments that are genuinely necessary — transparency and integrity guide every consultation.</p>
+      </div>
+      <div class="feature-card reveal">
+        <div class="feature-card__icon" aria-hidden="true">😊</div>
+        <h3 class="feature-card__title">Anxiety-Free Care</h3>
+        <p class="feature-card__desc">Our calm, welcoming atmosphere and gentle technique are specifically designed to ease dental anxiety at every step.</p>
+      </div>
+      <div class="feature-card reveal reveal-delay-1">
+        <div class="feature-card__icon" aria-hidden="true">🎯</div>
+        <h3 class="feature-card__title">Precision & Excellence</h3>
+        <p class="feature-card__desc">We hold ourselves to the highest clinical standards to ensure every procedure delivers excellent, lasting results.</p>
+      </div>
+      <div class="feature-card reveal reveal-delay-2">
+        <div class="feature-card__icon" aria-hidden="true">🏡</div>
+        <h3 class="feature-card__title">Community Care</h3>
+        <p class="feature-card__desc">We actively participate in dental health education drives and community outreach programmes across the city.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Journey / Timeline -->
+<section class="section" aria-labelledby="journey-title">
+  <div class="container" style="max-width:800px;">
+    <div class="section-header section-header--center">
+      <span class="section-label">Professional Journey</span>
+      <h2 class="section-title" id="journey-title">Years of <em>Excellence</em></h2>
+      <div class="divider divider--center" aria-hidden="true"></div>
+    </div>
+    <div class="timeline reveal">
+      <div class="timeline-item">
+        <div class="timeline-year">2014</div>
+        <div class="timeline-title">BDS – Bachelor of Dental Surgery</div>
+        <div class="timeline-desc">Graduated with distinction from a premier dental college, laying the foundation for a lifetime of dental excellence.</div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-year">2016</div>
+        <div class="timeline-title">MDS – Oral & Maxillofacial Surgery</div>
+        <div class="timeline-desc">Specialised postgraduate training in complex oral procedures, surgical extractions, and facial trauma management.</div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-year">2018</div>
+        <div class="timeline-title">Fellowship in Cosmetic Dentistry</div>
+        <div class="timeline-desc">Advanced international fellowship focused on smile design, veneers, bonding, and full-mouth rehabilitation.</div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-year">2019</div>
+        <div class="timeline-title">Certified Invisalign Provider</div>
+        <div class="timeline-desc">Completed official certification as an Invisalign provider, enabling patients to straighten teeth discreetly and comfortably.</div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-year">2020</div>
+        <div class="timeline-title">Opened Dr. Aanchal Dental Clinic</div>
+        <div class="timeline-desc">Launched her private practice — a state-of-the-art clinic built around the core principle of patient-centred care.</div>
+      </div>
+      <div class="timeline-item" style="padding-bottom:0;">
+        <div class="timeline-year">2026</div>
+        <div class="timeline-title">2500+ Happy Smiles & Counting</div>
+        <div class="timeline-desc">Continuing to transform smiles, educate patients, and raise the standard of dental care in the community.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA Banner -->
+<section style="background:linear-gradient(135deg,#1a1210,#2d1f14);padding:80px 0;text-align:center;" aria-labelledby="cta-title">
+  <div class="container">
+    <span class="section-label" style="color:var(--color-primary);">Ready to Start?</span>
+    <h2 class="section-title" id="cta-title" style="color:#fff;margin:8px auto 16px;">Your Best Smile is <em>One Step Away</em></h2>
+    <p style="color:rgba(255,255,255,0.65);max-width:480px;margin:0 auto 32px;font-size:1rem;">Book a consultation with Dr. Aanchal today and take the first step toward confident, healthy smiles.</p>
+    <a href="index.html#appointment" class="btn btn-primary">Book Appointment</a>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer" role="contentinfo">
+  <div class="container">
+    <div class="footer__top">
+      <div>
+        <div class="footer__brand-name">Dr. Aanchal</div>
+        <span class="footer__brand-tagline">Creating Confident Smiles</span>
+        <p class="footer__brand-desc">Advanced cosmetic and general dentistry in a modern, caring environment.</p>
+        <div class="footer__social" aria-label="Social media">
+          <a href="#" class="social-link" aria-label="Facebook">f</a>
+          <a href="#" class="social-link" aria-label="Instagram">in</a>
+          <a href="#" class="social-link" aria-label="Twitter">tw</a>
+        </div>
+      </div>
+      <div>
+        <h4 class="footer__col-title">Quick Links</h4>
+        <ul class="footer__links">
+          <li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li><li><a href="gallery.html">Gallery</a></li>
+          <li><a href="blog.html">Blog</a></li><li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="footer__col-title">Treatments</h4>
+        <ul class="footer__links">
+          <li><a href="services.html">Teeth Whitening</a></li><li><a href="services.html">Dental Implants</a></li>
+          <li><a href="services.html">Root Canal</a></li><li><a href="services.html">Smile Makeover</a></li>
+          <li><a href="services.html">Invisalign</a></li><li><a href="services.html">Braces</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="footer__col-title">Contact</h4>
+        <ul class="footer__links" style="gap:14px;">
+          <li style="color:rgba(255,255,255,0.5);font-size:0.88rem;">📍 Sector 12, New Delhi</li>
+          <li><a href="tel:+919876500000" style="color:rgba(255,255,255,0.5);font-size:0.88rem;">📞 +91 98765 XXXXX</a></li>
+          <li><a href="mailto:hello@draanchal.in" style="color:rgba(255,255,255,0.5);font-size:0.88rem;">✉️ hello@draanchal.in</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom"><span>&copy; 2026 Dr. Aanchal Dental Clinic. All rights reserved.</span></div>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>

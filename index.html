@@ -1,0 +1,1014 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Dr. Aanchal – Expert cosmetic and general dentistry. Book an appointment for teeth whitening, dental implants, Invisalign, smile makeovers, and more." />
+  <title>Dr. Aanchal | Creating Confident Smiles – Dental Clinic</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+
+  <!-- Inline SVG icon fallback for hero image -->
+  <style>
+    .hero__bg {
+      background-image: linear-gradient(135deg, #2d1f14 0%, #1a1210 100%);
+    }
+    .services-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+    .about__grid { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: center; }
+    .why-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+    .treatments-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; }
+
+    @media (max-width: 1024px) {
+      .treatments-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (max-width: 900px) {
+      .services-grid { grid-template-columns: repeat(2, 1fr); }
+      .why-grid { grid-template-columns: repeat(2, 1fr); }
+      .treatments-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (max-width: 600px) {
+      .services-grid { grid-template-columns: 1fr; }
+      .why-grid { grid-template-columns: 1fr; }
+      .treatments-grid { grid-template-columns: 1fr; }
+    }
+
+    /* Hero gradient covers the whole height */
+    .hero__bg {
+      background: linear-gradient(160deg,
+        #0f0b09 0%,
+        #1e1410 30%,
+        #2a1c12 55%,
+        #1a1210 100%
+      );
+      opacity: 1 !important;
+      animation: none !important;
+    }
+    /* Tooth SVG decoration */
+    .hero__deco {
+      position: absolute;
+      right: 5%;
+      top: 50%;
+      transform: translateY(-50%);
+      width: min(420px, 42vw);
+      opacity: 0.08;
+      pointer-events: none;
+      animation: fadeIn 1s ease 1.2s both;
+    }
+    @media (max-width: 768px) { .hero__deco { display: none; } }
+  </style>
+</head>
+<body>
+
+<!-- ================================================================
+     NAVBAR
+     ================================================================ -->
+<nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
+  <div class="navbar__inner">
+    <a href="index.html" class="navbar__logo" aria-label="Dr. Aanchal Dental Clinic home">
+      <div class="navbar__logo-icon" aria-hidden="true">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M12 2C9 2 6 4 6 7c0 2 .5 3.5 1 5 .5 1.5 1 3 1 5 0 1.5.5 3 2 3s2-1.5 2-3c0-.5.2-1 .5-1 .3 0 .5.5.5 1 0 1.5.5 3 2 3s2-1.5 2-3c0-2 .5-3.5 1-5 .5-1.5 1-3 1-5 0-3-3-5-6-5z"/>
+        </svg>
+      </div>
+      <div class="navbar__logo-text">
+        <span>Dr. Aanchal</span>
+        <span>Dental Clinic</span>
+      </div>
+    </a>
+
+    <ul class="navbar__nav" role="list">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+
+    <div class="navbar__cta">
+      <a href="#appointment" class="btn btn-primary btn-sm">Book Appointment</a>
+    </div>
+
+    <button class="navbar__hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- Mobile Nav -->
+<nav class="navbar__mobile" id="mobileNav" role="navigation" aria-label="Mobile navigation">
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="services.html">Services</a>
+  <a href="gallery.html">Gallery</a>
+  <a href="blog.html">Blog</a>
+  <a href="contact.html">Contact</a>
+  <a href="#appointment" class="btn btn-primary" style="margin-top:8px">Book Appointment</a>
+</nav>
+
+<!-- ================================================================
+     HERO SECTION
+     ================================================================ -->
+<section class="hero" id="top" aria-label="Hero">
+  <div class="hero__bg" aria-hidden="true"></div>
+  <div class="hero__gradient" aria-hidden="true"></div>
+
+  <!-- Decorative SVG tooth -->
+  <svg class="hero__deco" viewBox="0 0 200 220" fill="white" aria-hidden="true">
+    <path d="M100 10C75 10 50 28 50 55c0 15 4 25 8 37 4 12 8 24 8 40 0 12 4 22 14 22s14-10 14-22c0-4 2-7 6-7s6 3 6 7c0 12 4 22 14 22s14-10 14-22c0-16 4-28 8-40 4-12 8-22 8-37 0-27-25-45-50-45z"/>
+  </svg>
+
+  <div class="hero__content">
+    <div class="hero__badge" aria-label="Clinic designation">
+      <span class="hero__badge-dot" aria-hidden="true"></span>
+      Cosmetic &amp; General Dentistry
+    </div>
+
+    <h1 class="hero__title">
+      Healthy Smiles Begin
+      <em>with Expert Care</em>
+    </h1>
+
+    <p class="hero__subtitle">
+      Advanced dental treatments by Dr. Aanchal in a comfortable and modern clinic. Your smile deserves the very best.
+    </p>
+
+    <div class="hero__actions">
+      <a href="#appointment" class="btn btn-primary">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+        Book Appointment
+      </a>
+      <a href="#services" class="btn btn-outline" style="color:#fff; border-color:rgba(255,255,255,0.4);">
+        Explore Services
+      </a>
+    </div>
+
+    <div class="hero__stats">
+      <div class="hero__stat">
+        <div class="hero__stat-number" data-count="10" data-suffix="+">0</div>
+        <div class="hero__stat-label">Years Experience</div>
+      </div>
+      <div class="hero__stat-divider" aria-hidden="true"></div>
+      <div class="hero__stat">
+        <div class="hero__stat-number" data-count="2500" data-suffix="+">0</div>
+        <div class="hero__stat-label">Happy Patients</div>
+      </div>
+      <div class="hero__stat-divider" aria-hidden="true"></div>
+      <div class="hero__stat">
+        <div class="hero__stat-number" data-count="8" data-suffix="+">0</div>
+        <div class="hero__stat-label">Treatments Offered</div>
+      </div>
+      <div class="hero__stat-divider" aria-hidden="true"></div>
+      <div class="hero__stat">
+        <div class="hero__stat-number" data-count="98" data-suffix="%">0</div>
+        <div class="hero__stat-label">Patient Satisfaction</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero__scroll" id="heroScroll" aria-label="Scroll down">
+    <span>Scroll</span>
+    <div class="hero__scroll-line" aria-hidden="true"></div>
+  </div>
+</section>
+
+<!-- ================================================================
+     SERVICES OVERVIEW
+     ================================================================ -->
+<section class="section" id="services" aria-labelledby="services-title">
+  <div class="container">
+    <div class="section-header section-header--center">
+      <span class="section-label">What We Offer</span>
+      <h2 class="section-title" id="services-title">Comprehensive Dental <em>Treatments</em></h2>
+      <div class="divider divider--center" aria-hidden="true"></div>
+      <p class="section-desc">We provide modern, patient-focused dental solutions designed for your comfort and long-term oral health.</p>
+    </div>
+
+    <div class="services-grid">
+
+      <!-- Card 1 -->
+      <article class="service-card reveal" aria-label="Teeth Whitening service">
+        <div class="service-card__icon" aria-hidden="true">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#C8A47E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M8 12l2 2 4-4"/></svg>
+        </div>
+        <h3 class="service-card__title">Teeth Whitening</h3>
+        <p class="service-card__desc">Professional-grade whitening treatments to brighten your smile safely and comfortably — results in a single session.</p>
+        <a href="services.html#whitening" class="service-card__link">Learn More →</a>
+      </article>
+
+      <!-- Card 2 -->
+      <article class="service-card reveal reveal-delay-1" aria-label="Dental Implants service">
+        <div class="service-card__icon" aria-hidden="true">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#C8A47E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v6m0 0c-3 0-5 2-5 4v10h10V12c0-2-2-4-5-4z"/></svg>
+        </div>
+        <h3 class="service-card__title">Dental Implants</h3>
+        <p class="service-card__desc">Permanent, natural-looking replacements for missing teeth — restoring both function and aesthetics with confidence.</p>
+        <a href="services.html#implants" class="service-card__link">Learn More →</a>
+      </article>
+
+      <!-- Card 3 -->
+      <article class="service-card reveal reveal-delay-2" aria-label="Root Canal Treatment service">
+        <div class="service-card__icon" aria-hidden="true">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#C8A47E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2C9 2 6 4 6 7c0 5 2 8 4 12h4c2-4 4-7 4-12 0-3-3-5-6-5z"/></svg>
+        </div>
+        <h3 class="service-card__title">Root Canal Treatment</h3>
+        <p class="service-card__desc">Modern, virtually painless root canal therapy to save your natural tooth and relieve infection-related discomfort.</p>
+        <a href="services.html#rootcanal" class="service-card__link">Learn More →</a>
+      </article>
+
+      <!-- Card 4 -->
+      <article class="service-card reveal" aria-label="Smile Makeover service">
+        <div class="service-card__icon" aria-hidden="true">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#C8A47E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><line x1="9" y1="9" x2="9.01" y2="9"/><line x1="15" y1="9" x2="15.01" y2="9"/></svg>
+        </div>
+        <h3 class="service-card__title">Smile Makeover</h3>
+        <p class="service-card__desc">A customised combination of cosmetic procedures to transform your smile completely — veneers, whitening, and reshaping.</p>
+        <a href="services.html#makeover" class="service-card__link">Learn More →</a>
+      </article>
+
+      <!-- Card 5 -->
+      <article class="service-card reveal reveal-delay-1" aria-label="Invisalign service">
+        <div class="service-card__icon" aria-hidden="true">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#C8A47E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="8" width="16" height="8" rx="4"/><line x1="9" y1="8" x2="9" y2="16"/><line x1="15" y1="8" x2="15" y2="16"/></svg>
+        </div>
+        <h3 class="service-card__title">Invisalign</h3>
+        <p class="service-card__desc">Clear, removable aligners that straighten your teeth discreetly — no metal wires, no brackets, just gradual perfection.</p>
+        <a href="services.html#invisalign" class="service-card__link">Learn More →</a>
+      </article>
+
+      <!-- Card 6 -->
+      <article class="service-card reveal reveal-delay-2" aria-label="Dental Cleaning service">
+        <div class="service-card__icon" aria-hidden="true">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#C8A47E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
+        </div>
+        <h3 class="service-card__title">Dental Cleaning</h3>
+        <p class="service-card__desc">Professional prophylaxis and scaling to remove plaque and tartar buildup — keeping your gums and enamel healthy.</p>
+        <a href="services.html#cleaning" class="service-card__link">Learn More →</a>
+      </article>
+
+    </div>
+
+    <div style="text-align:center; margin-top:40px;">
+      <a href="services.html" class="btn btn-outline">View All Treatments</a>
+    </div>
+  </div>
+</section>
+
+<!-- ================================================================
+     ABOUT THE DOCTOR
+     ================================================================ -->
+<section class="section section--alt" id="about" aria-labelledby="about-title">
+  <div class="container">
+    <div class="about__grid">
+
+      <div class="about__image-wrap reveal">
+        <div style="width:100%;height:520px;background:linear-gradient(135deg,#f6f3ef,#e8ddd4);border-radius:16px;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:16px;">
+          <svg width="100" height="110" viewBox="0 0 24 24" fill="none" stroke="#C8A47E" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+            <circle cx="12" cy="7" r="4"/>
+          </svg>
+          <p style="font-family:'Playfair Display',serif;font-size:1.2rem;color:#8C6A4A;font-weight:600;">Dr. Aanchal</p>
+          <p style="font-size:0.85rem;color:#9A9A9A;letter-spacing:0.06em;text-transform:uppercase;">BDS, MDS – Cosmetic Dentistry</p>
+        </div>
+        <div class="about__badge">
+          <div class="about__badge-icon" aria-hidden="true">🏆</div>
+          <div class="about__badge-text">
+            <span>10+ Years</span>
+            <span>of Excellence</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="about__content reveal reveal-delay-2">
+        <span class="section-label">Meet the Doctor</span>
+        <h2 class="section-title" id="about-title">Caring for Your Smile <em>with Expertise</em></h2>
+        <div class="divider" aria-hidden="true"></div>
+
+        <p class="about__bio">
+          Dr. Aanchal is a highly skilled cosmetic and general dentist dedicated to delivering gentle, modern dental care focused on long-term oral health and beautiful smiles. With over a decade of clinical experience, she combines precision technique with a deeply patient-first philosophy.
+        </p>
+        <p class="about__bio" style="margin-top:12px;">
+          Her warm, reassuring approach has helped thousands of patients overcome dental anxiety while achieving the smile they've always dreamed of — from routine cleanings to complete smile transformations.
+        </p>
+
+        <div class="about__credentials">
+          <div class="credential-item">
+            <div class="credential-dot" aria-hidden="true"></div>
+            <span>BDS (Bachelor of Dental Surgery)</span>
+          </div>
+          <div class="credential-item">
+            <div class="credential-dot" aria-hidden="true"></div>
+            <span>MDS – Oral &amp; Maxillofacial Surgery</span>
+          </div>
+          <div class="credential-item">
+            <div class="credential-dot" aria-hidden="true"></div>
+            <span>Fellowship in Cosmetic Dentistry</span>
+          </div>
+          <div class="credential-item">
+            <div class="credential-dot" aria-hidden="true"></div>
+            <span>Certified Invisalign Provider</span>
+          </div>
+          <div class="credential-item">
+            <div class="credential-dot" aria-hidden="true"></div>
+            <span>Member – Indian Dental Association (IDA)</span>
+          </div>
+        </div>
+
+        <div class="about__stats">
+          <div>
+            <div class="about__stat-num" data-count="10" data-suffix="+">10+</div>
+            <div class="about__stat-label">Years Exp.</div>
+          </div>
+          <div>
+            <div class="about__stat-num" data-count="2500" data-suffix="+">2500+</div>
+            <div class="about__stat-label">Patients Treated</div>
+          </div>
+          <div>
+            <div class="about__stat-num" data-count="98" data-suffix="%">98%</div>
+            <div class="about__stat-label">Satisfaction</div>
+          </div>
+        </div>
+
+        <a href="about.html" class="btn btn-primary" style="margin-top: 8px;">Learn More About Us</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ================================================================
+     WHY CHOOSE US
+     ================================================================ -->
+<section class="section" id="why" aria-labelledby="why-title">
+  <div class="container">
+    <div class="section-header section-header--center">
+      <span class="section-label">Why Choose Us</span>
+      <h2 class="section-title" id="why-title">The <em>Difference</em> You'll Feel</h2>
+      <div class="divider divider--center" aria-hidden="true"></div>
+      <p class="section-desc">From the moment you walk in, you'll experience a dental clinic designed with your comfort and health in mind.</p>
+    </div>
+
+    <div class="why-grid">
+
+      <div class="feature-card reveal">
+        <div class="feature-card__icon" aria-hidden="true">🔬</div>
+        <h3 class="feature-card__title">Advanced Technology</h3>
+        <p class="feature-card__desc">Digital X-rays, 3D imaging, and the latest dental equipment ensure precise diagnoses and superior outcomes.</p>
+      </div>
+
+      <div class="feature-card reveal reveal-delay-1">
+        <div class="feature-card__icon" aria-hidden="true">😌</div>
+        <h3 class="feature-card__title">Pain-Free Treatments</h3>
+        <p class="feature-card__desc">Modern anaesthesia techniques and a gentle approach mean even complex procedures are comfortable and stress-free.</p>
+      </div>
+
+      <div class="feature-card reveal reveal-delay-2">
+        <div class="feature-card__icon" aria-hidden="true">👩‍⚕️</div>
+        <h3 class="feature-card__title">Experienced Dentist</h3>
+        <p class="feature-card__desc">Over 10 years of clinical expertise in cosmetic and general dentistry, backed by global certifications.</p>
+      </div>
+
+      <div class="feature-card reveal">
+        <div class="feature-card__icon" aria-hidden="true">💛</div>
+        <h3 class="feature-card__title">Personalised Care</h3>
+        <p class="feature-card__desc">Every treatment plan is uniquely tailored to your oral health goals, lifestyle, and budget — no one-size-fits-all here.</p>
+      </div>
+
+      <div class="feature-card reveal reveal-delay-1">
+        <div class="feature-card__icon" aria-hidden="true">🏥</div>
+        <h3 class="feature-card__title">Modern Equipment</h3>
+        <p class="feature-card__desc">Fully sterilised, state-of-the-art facility with international-grade tools and materials for every procedure.</p>
+      </div>
+
+      <div class="feature-card reveal reveal-delay-2">
+        <div class="feature-card__icon" aria-hidden="true">🌸</div>
+        <h3 class="feature-card__title">Friendly Environment</h3>
+        <p class="feature-card__desc">A warm, welcoming clinic atmosphere that puts patients of all ages at ease from the very first visit.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ================================================================
+     TREATMENTS SECTION
+     ================================================================ -->
+<section class="section section--alt" id="treatments" aria-labelledby="treatments-title">
+  <div class="container">
+    <div class="section-header section-header--center">
+      <span class="section-label">Our Procedures</span>
+      <h2 class="section-title" id="treatments-title">Treatments <em>Tailored for You</em></h2>
+      <div class="divider divider--center" aria-hidden="true"></div>
+    </div>
+
+    <div class="treatments-grid">
+
+      <article class="treatment-card reveal">
+        <div class="treatment-card__img">
+          <div class="gallery-placeholder"><span>🦷</span><p>Teeth Whitening</p></div>
+        </div>
+        <div class="treatment-card__body">
+          <h3 class="treatment-card__title">Teeth Whitening</h3>
+          <p class="treatment-card__desc">Brighten your smile by up to 8 shades with our professional in-chair whitening system.</p>
+          <a href="services.html#whitening" class="btn btn-outline btn-sm">Learn More</a>
+        </div>
+      </article>
+
+      <article class="treatment-card reveal reveal-delay-1">
+        <div class="treatment-card__img">
+          <div class="gallery-placeholder"><span>🦷</span><p>Dental Implants</p></div>
+        </div>
+        <div class="treatment-card__body">
+          <h3 class="treatment-card__title">Dental Implants</h3>
+          <p class="treatment-card__desc">Permanent tooth replacement that looks, feels, and functions just like natural teeth.</p>
+          <a href="services.html#implants" class="btn btn-outline btn-sm">Learn More</a>
+        </div>
+      </article>
+
+      <article class="treatment-card reveal reveal-delay-2">
+        <div class="treatment-card__img">
+          <div class="gallery-placeholder"><span>😁</span><p>Braces</p></div>
+        </div>
+        <div class="treatment-card__body">
+          <h3 class="treatment-card__title">Braces</h3>
+          <p class="treatment-card__desc">Traditional and ceramic braces carefully designed for effective, lasting alignment results.</p>
+          <a href="services.html#braces" class="btn btn-outline btn-sm">Learn More</a>
+        </div>
+      </article>
+
+      <article class="treatment-card reveal reveal-delay-3">
+        <div class="treatment-card__img">
+          <div class="gallery-placeholder"><span>✨</span><p>Smile Makeover</p></div>
+        </div>
+        <div class="treatment-card__body">
+          <h3 class="treatment-card__title">Smile Makeover</h3>
+          <p class="treatment-card__desc">Comprehensive cosmetic transformation combining multiple treatments for a stunning new smile.</p>
+          <a href="services.html#makeover" class="btn btn-outline btn-sm">Learn More</a>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ================================================================
+     BEFORE / AFTER GALLERY
+     ================================================================ -->
+<section class="section" id="gallery" aria-labelledby="gallery-title">
+  <div class="container">
+    <div class="section-header section-header--center">
+      <span class="section-label">Transformations</span>
+      <h2 class="section-title" id="gallery-title">Before &amp; After <em>Gallery</em></h2>
+      <div class="divider divider--center" aria-hidden="true"></div>
+      <p class="section-desc">Real results from real patients. Every smile tells a story of confidence regained.</p>
+    </div>
+
+    <div class="gallery-grid">
+
+      <div class="gallery-item reveal">
+        <div class="gallery-placeholder">
+          <span>✨</span>
+          <p>Teeth Whitening<br>Before &amp; After</p>
+        </div>
+        <div class="gallery-item__overlay">
+          <div>
+            <div class="gallery-item__label">Teeth Whitening</div>
+            <div class="gallery-item__sublabel">8 shades brighter</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="gallery-item reveal reveal-delay-1">
+        <div class="gallery-placeholder">
+          <span>🦷</span>
+          <p>Smile Makeover<br>Before &amp; After</p>
+        </div>
+        <div class="gallery-item__overlay">
+          <div>
+            <div class="gallery-item__label">Smile Makeover</div>
+            <div class="gallery-item__sublabel">Complete transformation</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="gallery-item reveal reveal-delay-2">
+        <div class="gallery-placeholder">
+          <span>😁</span>
+          <p>Invisalign<br>Before &amp; After</p>
+        </div>
+        <div class="gallery-item__overlay">
+          <div>
+            <div class="gallery-item__label">Invisalign</div>
+            <div class="gallery-item__sublabel">Perfectly aligned</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="gallery-item reveal">
+        <div class="gallery-placeholder">
+          <span>💎</span>
+          <p>Veneers<br>Before &amp; After</p>
+        </div>
+        <div class="gallery-item__overlay">
+          <div>
+            <div class="gallery-item__label">Dental Veneers</div>
+            <div class="gallery-item__sublabel">Hollywood smile</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="gallery-item reveal reveal-delay-1">
+        <div class="gallery-placeholder">
+          <span>🏆</span>
+          <p>Implants<br>Before &amp; After</p>
+        </div>
+        <div class="gallery-item__overlay">
+          <div>
+            <div class="gallery-item__label">Dental Implants</div>
+            <div class="gallery-item__sublabel">Permanent restoration</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="gallery-item reveal reveal-delay-2">
+        <div class="gallery-placeholder">
+          <span>🌟</span>
+          <p>Braces<br>Before &amp; After</p>
+        </div>
+        <div class="gallery-item__overlay">
+          <div>
+            <div class="gallery-item__label">Orthodontics</div>
+            <div class="gallery-item__sublabel">Beautifully aligned</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div style="text-align:center;margin-top:40px;">
+      <a href="gallery.html" class="btn btn-outline">View Full Gallery</a>
+    </div>
+  </div>
+</section>
+
+<!-- ================================================================
+     TESTIMONIALS
+     ================================================================ -->
+<section class="section section--alt" id="testimonials" aria-labelledby="testimonials-title">
+  <div class="container">
+    <div class="section-header section-header--center">
+      <span class="section-label">Patient Stories</span>
+      <h2 class="section-title" id="testimonials-title">What Our <em>Patients Say</em></h2>
+      <div class="divider divider--center" aria-hidden="true"></div>
+    </div>
+
+    <div class="testimonials-carousel" aria-label="Patient testimonials carousel">
+      <div class="testimonials-track" id="testimonialsTrack">
+
+        <!-- Review 1 -->
+        <div class="testimonial-card">
+          <div class="testimonial-inner">
+            <div class="testimonial__stars" aria-label="5 out of 5 stars">
+              <span class="star" aria-hidden="true">★</span>
+              <span class="star" aria-hidden="true">★</span>
+              <span class="star" aria-hidden="true">★</span>
+              <span class="star" aria-hidden="true">★</span>
+              <span class="star" aria-hidden="true">★</span>
+            </div>
+            <p class="testimonial__text">
+              "Dr. Aanchal made my dental experience completely painless and comfortable. I was terrified of dentists before, but her calm and reassuring manner changed everything. My smile has never looked better — I feel so much more confident!"
+            </p>
+            <div class="testimonial__author">
+              <div class="testimonial__avatar" aria-hidden="true">R</div>
+              <div>
+                <div class="testimonial__name">Riya Sharma</div>
+                <div class="testimonial__role">Teeth Whitening Patient</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 2 -->
+        <div class="testimonial-card">
+          <div class="testimonial-inner">
+            <div class="testimonial__stars" aria-label="5 out of 5 stars">
+              <span class="star" aria-hidden="true">★</span>
+              <span class="star" aria-hidden="true">★</span>
+              <span class="star" aria-hidden="true">★</span>
+              <span class="star" aria-hidden="true">★</span>
+              <span class="star" aria-hidden="true">★</span>
+            </div>
+            <p class="testimonial__text">
+              "I had a root canal treatment here and honestly I was expecting the worst. Dr. Aanchal walked me through every step and I felt zero pain. The clinic is modern, clean, and the staff is incredibly warm. Highly recommended!"
+            </p>
+            <div class="testimonial__author">
+              <div class="testimonial__avatar" aria-hidden="true">A</div>
+              <div>
+                <div class="testimonial__name">Arjun Patel</div>
+                <div class="testimonial__role">Root Canal Patient</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 3 -->
+        <div class="testimonial-card">
+          <div class="testimonial-inner">
+            <div class="testimonial__stars" aria-label="5 out of 5 stars">
+              <span class="star" aria-hidden="true">★</span>
+              <span class="star" aria-hidden="true">★</span>
+              <span class="star" aria-hidden="true">★</span>
+              <span class="star" aria-hidden="true">★</span>
+              <span class="star" aria-hidden="true">★</span>
+            </div>
+            <p class="testimonial__text">
+              "My smile makeover by Dr. Aanchal is the best investment I've ever made. She took time to understand exactly what I wanted and delivered beyond my expectations. The clinic is beautiful and so professionally run. 10/10!"
+            </p>
+            <div class="testimonial__author">
+              <div class="testimonial__avatar" aria-hidden="true">M</div>
+              <div>
+                <div class="testimonial__name">Megha Kapoor</div>
+                <div class="testimonial__role">Smile Makeover Patient</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="carousel-controls" aria-label="Carousel navigation">
+        <button class="carousel-btn" id="carouselPrev" aria-label="Previous testimonial">&#8592;</button>
+        <div class="carousel-dots" role="tablist" aria-label="Testimonial slides">
+          <div class="carousel-dot active" role="tab" aria-label="Slide 1" aria-selected="true"></div>
+          <div class="carousel-dot" role="tab" aria-label="Slide 2" aria-selected="false"></div>
+          <div class="carousel-dot" role="tab" aria-label="Slide 3" aria-selected="false"></div>
+        </div>
+        <button class="carousel-btn" id="carouselNext" aria-label="Next testimonial">&#8594;</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================================================================
+     APPOINTMENT BOOKING FORM
+     ================================================================ -->
+<section class="section appointment-section" id="appointment" aria-labelledby="appointment-title">
+  <div class="container">
+    <div class="appointment-grid">
+
+      <div class="appointment__info reveal">
+        <span class="section-label">Book a Visit</span>
+        <h2 class="section-title" id="appointment-title">Schedule Your <em>Consultation</em></h2>
+        <div class="divider" aria-hidden="true"></div>
+        <p class="section-desc">Take the first step towards a healthier, more beautiful smile. Our team will confirm your appointment within 24 hours.</p>
+
+        <div class="appointment__info-items">
+          <div class="appointment__info-item">
+            <div class="appointment__info-item-icon" aria-hidden="true">📞</div>
+            <span>+91 98765 XXXXX</span>
+          </div>
+          <div class="appointment__info-item">
+            <div class="appointment__info-item-icon" aria-hidden="true">✉️</div>
+            <span>hello@draanchal.in</span>
+          </div>
+          <div class="appointment__info-item">
+            <div class="appointment__info-item-icon" aria-hidden="true">📍</div>
+            <span>XYZ Dental Centre, Sector 12, Your City – 110001</span>
+          </div>
+          <div class="appointment__info-item">
+            <div class="appointment__info-item-icon" aria-hidden="true">🕐</div>
+            <span>Mon–Sat: 9:00 AM – 7:00 PM</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="reveal reveal-delay-2">
+        <form class="appointment-form" id="appointmentForm" novalidate aria-label="Appointment booking form">
+          <h3 style="font-family:var(--font-heading);font-size:1.3rem;font-weight:600;margin-bottom:24px;color:var(--color-text);">Book an Appointment</h3>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="fname">Full Name *</label>
+              <input type="text" id="fname" name="name" placeholder="Your full name" required aria-required="true" />
+            </div>
+            <div class="form-group">
+              <label for="fphone">Phone Number *</label>
+              <input type="tel" id="fphone" name="phone" placeholder="+91 XXXXX XXXXX" required aria-required="true" />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="femail">Email Address *</label>
+            <input type="email" id="femail" name="email" placeholder="your@email.com" required aria-required="true" />
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="ftreatment">Treatment Required</label>
+              <select id="ftreatment" name="treatment">
+                <option value="" disabled selected>Select a treatment</option>
+                <option>Teeth Whitening</option>
+                <option>Dental Implants</option>
+                <option>Root Canal Treatment</option>
+                <option>Smile Makeover</option>
+                <option>Invisalign</option>
+                <option>Dental Cleaning</option>
+                <option>Braces</option>
+                <option>Tooth Extraction</option>
+                <option>General Consultation</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="fdate">Preferred Date</label>
+              <input type="date" id="fdate" name="date" />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="fmessage">Message (Optional)</label>
+            <textarea id="fmessage" name="message" placeholder="Tell us about your concern or any special requirement…"></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;">
+            Schedule Consultation
+          </button>
+        </form>
+
+        <div class="form-success" id="formSuccess" role="alert" aria-live="polite">
+          <div style="font-size:2.5rem;margin-bottom:12px;">✅</div>
+          <h4 style="font-family:var(--font-heading);font-size:1.2rem;color:var(--color-primary-dark);margin-bottom:8px;">Thank You!</h4>
+          <p style="color:var(--color-text-muted);font-size:0.95rem;">Your appointment request has been received. We'll call you within 24 hours to confirm your slot.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ================================================================
+     FAQ
+     ================================================================ -->
+<section class="section" id="faq" aria-labelledby="faq-title">
+  <div class="container">
+    <div class="section-header section-header--center">
+      <span class="section-label">Got Questions?</span>
+      <h2 class="section-title" id="faq-title">Frequently Asked <em>Questions</em></h2>
+      <div class="divider divider--center" aria-hidden="true"></div>
+    </div>
+
+    <div class="faq-list" role="list">
+
+      <div class="faq-item" role="listitem">
+        <button class="faq-question" aria-expanded="false" aria-controls="faq1">
+          Does teeth whitening hurt?
+          <span class="faq-icon" aria-hidden="true">+</span>
+        </button>
+        <div class="faq-answer" id="faq1" role="region">
+          <div class="faq-answer-inner">
+            Professional teeth whitening at our clinic is completely safe and largely painless. Some patients may experience mild sensitivity for 24–48 hours after treatment, which subsides naturally. We use carefully calibrated professional-grade agents that protect your enamel throughout the process.
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item" role="listitem">
+        <button class="faq-question" aria-expanded="false" aria-controls="faq2">
+          How long does a dental implant last?
+          <span class="faq-icon" aria-hidden="true">+</span>
+        </button>
+        <div class="faq-answer" id="faq2" role="region">
+          <div class="faq-answer-inner">
+            Dental implants are designed to last a lifetime with proper care. The titanium implant post itself can last 20–25+ years, while the crown (the visible tooth) typically lasts 10–15 years before it may need replacement. Regular brushing, flossing, and dental check-ups are key to implant longevity.
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item" role="listitem">
+        <button class="faq-question" aria-expanded="false" aria-controls="faq3">
+          How often should I visit a dentist?
+          <span class="faq-icon" aria-hidden="true">+</span>
+        </button>
+        <div class="faq-answer" id="faq3" role="region">
+          <div class="faq-answer-inner">
+            For most patients, we recommend a dental check-up and professional cleaning every 6 months. Patients with specific conditions like gum disease, a history of cavities, or ongoing orthodontic treatment may need more frequent visits. Regular appointments allow us to catch issues early, saving you time, discomfort, and cost.
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item" role="listitem">
+        <button class="faq-question" aria-expanded="false" aria-controls="faq4">
+          Are braces painful?
+          <span class="faq-icon" aria-hidden="true">+</span>
+        </button>
+        <div class="faq-answer" id="faq4" role="region">
+          <div class="faq-answer-inner">
+            Braces are not painful when they are first placed, however you may feel soreness or pressure for 2–4 days after each adjustment appointment as your teeth begin to shift. This is completely normal and can be managed with over-the-counter pain relief. Modern bracket designs are much more comfortable than older versions, and the results are well worth it.
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item" role="listitem">
+        <button class="faq-question" aria-expanded="false" aria-controls="faq5">
+          What is a smile makeover?
+          <span class="faq-icon" aria-hidden="true">+</span>
+        </button>
+        <div class="faq-answer" id="faq5" role="region">
+          <div class="faq-answer-inner">
+            A smile makeover is a personalised combination of cosmetic dental procedures — such as teeth whitening, veneers, dental bonding, Invisalign, and gum contouring — designed to transform the appearance of your smile. Dr. Aanchal conducts a detailed consultation to understand your goals and creates a bespoke treatment plan to achieve your dream smile.
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ================================================================
+     BLOG PREVIEW
+     ================================================================ -->
+<section class="section section--alt" id="blog" aria-labelledby="blog-title">
+  <div class="container">
+    <div class="section-header section-header--center">
+      <span class="section-label">Dental Education</span>
+      <h2 class="section-title" id="blog-title">Tips for a <em>Healthier Smile</em></h2>
+      <div class="divider divider--center" aria-hidden="true"></div>
+    </div>
+
+    <div class="grid-3">
+
+      <article class="blog-card reveal">
+        <div class="blog-card__img">🦷</div>
+        <div class="blog-card__body">
+          <div class="blog-card__meta">
+            <span class="blog-card__tag">Oral Health</span>
+            <span>March 2026 · 4 min read</span>
+          </div>
+          <h3 class="blog-card__title">How to Prevent Cavities: A Complete Guide</h3>
+          <p class="blog-card__excerpt">Cavities are the most common dental problem worldwide. Learn the best brushing techniques, dietary habits, and professional treatments to keep them away.</p>
+          <a href="blog.html" class="blog-card__link">Read More →</a>
+        </div>
+      </article>
+
+      <article class="blog-card reveal reveal-delay-1">
+        <div class="blog-card__img">✨</div>
+        <div class="blog-card__body">
+          <div class="blog-card__meta">
+            <span class="blog-card__tag">Cosmetic</span>
+            <span>February 2026 · 5 min read</span>
+          </div>
+          <h3 class="blog-card__title">The Benefits of Professional Teeth Whitening</h3>
+          <p class="blog-card__excerpt">While at-home kits may seem convenient, professional whitening offers faster, safer, and longer-lasting results. Here's why it's worth it.</p>
+          <a href="blog.html" class="blog-card__link">Read More →</a>
+        </div>
+      </article>
+
+      <article class="blog-card reveal reveal-delay-2">
+        <div class="blog-card__img">😊</div>
+        <div class="blog-card__body">
+          <div class="blog-card__meta">
+            <span class="blog-card__tag">Hygiene</span>
+            <span>January 2026 · 3 min read</span>
+          </div>
+          <h3 class="blog-card__title">Best Oral Hygiene Practices for 2026</h3>
+          <p class="blog-card__excerpt">From electric toothbrushes to water flossers — discover the most effective tools and habits for maintaining excellent oral hygiene every day.</p>
+          <a href="blog.html" class="blog-card__link">Read More →</a>
+        </div>
+      </article>
+
+    </div>
+
+    <div style="text-align:center;margin-top:40px;">
+      <a href="blog.html" class="btn btn-outline">View All Articles</a>
+    </div>
+  </div>
+</section>
+
+<!-- ================================================================
+     CONTACT SECTION
+     ================================================================ -->
+<section class="section" id="contact" aria-labelledby="contact-title">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label">Get In Touch</span>
+      <h2 class="section-title" id="contact-title">Find Us &amp; <em>Contact Us</em></h2>
+      <div class="divider" aria-hidden="true"></div>
+    </div>
+
+    <div class="contact-grid">
+
+      <div class="contact-info reveal">
+
+        <div class="contact-item">
+          <div class="contact-item__icon" aria-hidden="true">📍</div>
+          <div>
+            <span class="contact-item__label">Clinic Address</span>
+            <span class="contact-item__value">XYZ Dental Centre, Sector 12,<br>New Delhi – 110001</span>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <div class="contact-item__icon" aria-hidden="true">📞</div>
+          <div>
+            <span class="contact-item__label">Phone</span>
+            <a href="tel:+919876500000" class="contact-item__value">+91 98765 XXXXX</a>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <div class="contact-item__icon" aria-hidden="true">✉️</div>
+          <div>
+            <span class="contact-item__label">Email</span>
+            <a href="mailto:hello@draanchal.in" class="contact-item__value">hello@draanchal.in</a>
+          </div>
+        </div>
+
+        <div class="working-hours">
+          <h4>Working Hours</h4>
+          <div class="hours-row today"><span>Monday – Friday</span><span>9:00 AM – 7:00 PM</span></div>
+          <div class="hours-row"><span>Saturday</span><span>9:00 AM – 5:00 PM</span></div>
+          <div class="hours-row"><span>Sunday</span><span>By Appointment Only</span></div>
+          <div class="hours-row"><span>Public Holidays</span><span>Closed</span></div>
+        </div>
+
+      </div>
+
+      <div class="map-placeholder reveal reveal-delay-2">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3502.1!2d77.2!3d28.6!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjjCsDM2JzAwLjAiTiA3N8KwMTInMDAuMCJF!5e0!3m2!1sen!2sin!4v1234567890"
+          loading="lazy"
+          allowfullscreen
+          referrerpolicy="no-referrer-when-downgrade"
+          title="Dr. Aanchal Dental Clinic Location"
+          style="width:100%;height:420px;border:none;border-radius:16px;"
+        ></iframe>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ================================================================
+     FOOTER
+     ================================================================ -->
+<footer class="footer" role="contentinfo" aria-label="Site footer">
+  <div class="container">
+    <div class="footer__top">
+
+      <div>
+        <div class="footer__brand-name">Dr. Aanchal</div>
+        <span class="footer__brand-tagline">Creating Confident Smiles</span>
+        <p class="footer__brand-desc">Advanced cosmetic and general dentistry in a modern, caring environment. Your smile is our passion.</p>
+        <div class="footer__social" aria-label="Social media links">
+          <a href="#" class="social-link" aria-label="Facebook">f</a>
+          <a href="#" class="social-link" aria-label="Instagram">in</a>
+          <a href="#" class="social-link" aria-label="Twitter">tw</a>
+          <a href="#" class="social-link" aria-label="YouTube">yt</a>
+        </div>
+      </div>
+
+      <div>
+        <h4 class="footer__col-title">Quick Links</h4>
+        <ul class="footer__links" role="list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Dr. Aanchal</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="footer__col-title">Treatments</h4>
+        <ul class="footer__links" role="list">
+          <li><a href="services.html#whitening">Teeth Whitening</a></li>
+          <li><a href="services.html#implants">Dental Implants</a></li>
+          <li><a href="services.html#rootcanal">Root Canal</a></li>
+          <li><a href="services.html#makeover">Smile Makeover</a></li>
+          <li><a href="services.html#invisalign">Invisalign</a></li>
+          <li><a href="services.html#braces">Braces</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="footer__col-title">Contact</h4>
+        <ul class="footer__links" role="list" style="gap:14px;">
+          <li style="color:rgba(255,255,255,0.5);font-size:0.88rem;display:flex;gap:8px;align-items:flex-start;"><span style="color:var(--color-primary)">📍</span> Sector 12, New Delhi – 110001</li>
+          <li><a href="tel:+919876500000" style="color:rgba(255,255,255,0.5);font-size:0.88rem;display:flex;gap:8px;align-items:center;"><span style="color:var(--color-primary)">📞</span>+91 98765 XXXXX</a></li>
+          <li><a href="mailto:hello@draanchal.in" style="color:rgba(255,255,255,0.5);font-size:0.88rem;display:flex;gap:8px;align-items:center;"><span style="color:var(--color-primary)">✉️</span>hello@draanchal.in</a></li>
+          <li style="color:rgba(255,255,255,0.5);font-size:0.88rem;display:flex;gap:8px;align-items:center;"><span style="color:var(--color-primary)">🕐</span> Mon–Sat: 9 AM – 7 PM</li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="footer__bottom">
+      <span>&copy; 2026 Dr. Aanchal Dental Clinic. All rights reserved.</span>
+      <span>Crafted with ❤️ for beautiful smiles</span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>

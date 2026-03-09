@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Explore all dental services offered by Dr. Aanchal — teeth whitening, implants, root canal, smile makeover, Invisalign, braces, cleaning, and more." />
+  <title>Dental Services | Dr. Aanchal Dental Clinic</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <style>
+    .service-detail { display:grid; grid-template-columns:1fr 1fr; gap:48px; align-items:center; padding:64px 0; border-bottom:1px solid var(--color-border); }
+    .service-detail:last-child { border-bottom:none; }
+    .service-detail:nth-child(even) { direction:rtl; }
+    .service-detail:nth-child(even) > * { direction:ltr; }
+    .service-detail__visual { background:var(--color-secondary); border-radius:16px; height:340px; display:flex;align-items:center;justify-content:center;flex-direction:column;gap:12px;font-size:4rem; }
+    .service-detail__visual p { font-size:0.85rem;color:var(--color-text-muted);font-family:var(--font-heading);font-weight:600; }
+    .service-detail__content { display:flex;flex-direction:column;gap:16px; }
+    .included-list { display:flex;flex-direction:column;gap:8px;margin:8px 0; }
+    .included-item { display:flex;align-items:center;gap:10px;font-size:0.9rem;color:var(--color-text-muted); }
+    .included-item::before { content:'✓';color:var(--color-primary);font-weight:700;flex-shrink:0; }
+    @media(max-width:768px){ .service-detail{ grid-template-columns:1fr; direction:ltr!important; } }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
+  <div class="navbar__inner">
+    <a href="index.html" class="navbar__logo" aria-label="Dr. Aanchal Dental Clinic home">
+      <div class="navbar__logo-icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2C9 2 6 4 6 7c0 2 .5 3.5 1 5 .5 1.5 1 3 1 5 0 1.5.5 3 2 3s2-1.5 2-3c0-.5.2-1 .5-1 .3 0 .5.5.5 1 0 1.5.5 3 2 3s2-1.5 2-3c0-2 .5-3.5 1-5 .5-1.5 1-3 1-5 0-3-3-5-6-5z"/></svg></div>
+      <div class="navbar__logo-text"><span>Dr. Aanchal</span><span>Dental Clinic</span></div>
+    </a>
+    <ul class="navbar__nav" role="list">
+      <li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li>
+      <li><a href="services.html" class="active">Services</a></li><li><a href="gallery.html">Gallery</a></li>
+      <li><a href="blog.html">Blog</a></li><li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="navbar__cta"><a href="index.html#appointment" class="btn btn-primary btn-sm">Book Appointment</a></div>
+    <button class="navbar__hamburger" id="hamburger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+<nav class="navbar__mobile" id="mobileNav" aria-label="Mobile navigation">
+  <a href="index.html">Home</a><a href="about.html">About</a><a href="services.html">Services</a><a href="gallery.html">Gallery</a><a href="blog.html">Blog</a><a href="contact.html">Contact</a>
+  <a href="index.html#appointment" class="btn btn-primary" style="margin-top:8px">Book Appointment</a>
+</nav>
+
+<!-- Page Hero -->
+<section class="page-hero" aria-label="Services hero">
+  <div class="container">
+    <span class="page-hero__label">Our Treatments</span>
+    <h1 class="page-hero__title">Comprehensive Dental Services</h1>
+    <p class="page-hero__desc">From routine cleaning to complete smile transformations — all under one roof with Dr. Aanchal.</p>
+  </div>
+</section>
+
+<!-- Services Quick Nav -->
+<section style="background:var(--color-secondary);padding:24px 0;border-bottom:1px solid var(--color-border);">
+  <div class="container">
+    <div style="display:flex;flex-wrap:wrap;gap:12px;justify-content:center;">
+      <a href="#whitening" class="btn btn-outline btn-sm">Teeth Whitening</a>
+      <a href="#implants" class="btn btn-outline btn-sm">Dental Implants</a>
+      <a href="#rootcanal" class="btn btn-outline btn-sm">Root Canal</a>
+      <a href="#makeover" class="btn btn-outline btn-sm">Smile Makeover</a>
+      <a href="#invisalign" class="btn btn-outline btn-sm">Invisalign</a>
+      <a href="#cleaning" class="btn btn-outline btn-sm">Dental Cleaning</a>
+      <a href="#braces" class="btn btn-outline btn-sm">Braces</a>
+      <a href="#extraction" class="btn btn-outline btn-sm">Tooth Extraction</a>
+    </div>
+  </div>
+</section>
+
+<!-- Detailed Services -->
+<section class="section" aria-labelledby="services-detail-title">
+  <div class="container">
+    <div class="section-header section-header--center">
+      <span class="section-label">All Treatments</span>
+      <h2 class="section-title" id="services-detail-title">What We <em>Treat</em></h2>
+      <div class="divider divider--center" aria-hidden="true"></div>
+    </div>
+
+    <div id="whitening" class="service-detail reveal">
+      <div class="service-detail__visual"><span>✨</span><p>Teeth Whitening</p></div>
+      <div class="service-detail__content">
+        <span class="section-label">Cosmetic Dentistry</span>
+        <h3 class="section-title" style="font-size:1.7rem;">Teeth Whitening</h3>
+        <p style="color:var(--color-text-muted);line-height:1.8;">Our professional in-chair teeth whitening treatment uses pharmaceutical-grade bleaching agents to safely lighten your enamel by up to 8 shades — in just one session. Safe, fast, and long-lasting results that over-the-counter kits simply cannot match.</p>
+        <div class="included-list">
+          <div class="included-item">Results in a single 60-minute session</div>
+          <div class="included-item">Up to 8 shades lighter</div>
+          <div class="included-item">Enamel-safe FDA-approved formula</div>
+          <div class="included-item">Take-home maintenance kit included</div>
+        </div>
+        <a href="index.html#appointment" class="btn btn-primary" style="align-self:flex-start;">Book This Treatment</a>
+      </div>
+    </div>
+
+    <div id="implants" class="service-detail reveal">
+      <div class="service-detail__visual"><span>🦷</span><p>Dental Implants</p></div>
+      <div class="service-detail__content">
+        <span class="section-label">Restorative Dentistry</span>
+        <h3 class="section-title" style="font-size:1.7rem;">Dental Implants</h3>
+        <p style="color:var(--color-text-muted);line-height:1.8;">Dental implants are the gold standard for replacing missing teeth. A titanium post is surgically placed into the jawbone, acting as an artificial root. A custom crown is then attached, giving you a natural-looking, permanent tooth that functions exactly like the real thing.</p>
+        <div class="included-list">
+          <div class="included-item">Permanent, lifetime solution</div>
+          <div class="included-item">Natural look and feel</div>
+          <div class="included-item">Preserves jawbone structure</div>
+          <div class="included-item">No impact on adjacent teeth</div>
+        </div>
+        <a href="index.html#appointment" class="btn btn-primary" style="align-self:flex-start;">Book Consultation</a>
+      </div>
+    </div>
+
+    <div id="rootcanal" class="service-detail reveal">
+      <div class="service-detail__visual"><span>🏥</span><p>Root Canal Treatment</p></div>
+      <div class="service-detail__content">
+        <span class="section-label">Endodontics</span>
+        <h3 class="section-title" style="font-size:1.7rem;">Root Canal Treatment</h3>
+        <p style="color:var(--color-text-muted);line-height:1.8;">Root canal treatment removes infected pulp tissue from inside your tooth, eliminating pain and infection while saving your natural tooth. With modern anaesthesia and rotary endodontic instruments, the procedure is virtually painless and often completed in one visit.</p>
+        <div class="included-list">
+          <div class="included-item">Saves the natural tooth</div>
+          <div class="included-item">Modern rotary endodontic technique</div>
+          <div class="included-item">Often completed in a single visit</div>
+          <div class="included-item">Post-procedure crown placement included</div>
+        </div>
+        <a href="index.html#appointment" class="btn btn-primary" style="align-self:flex-start;">Book This Treatment</a>
+      </div>
+    </div>
+
+    <div id="makeover" class="service-detail reveal">
+      <div class="service-detail__visual"><span>💎</span><p>Smile Makeover</p></div>
+      <div class="service-detail__content">
+        <span class="section-label">Smile Design</span>
+        <h3 class="section-title" style="font-size:1.7rem;">Smile Makeover</h3>
+        <p style="color:var(--color-text-muted);line-height:1.8;">A smile makeover is a carefully curated combination of cosmetic dental procedures — porcelain veneers, teeth whitening, dental bonding, gum contouring, and crowns — specifically designed to give you your dream smile. Dr. Aanchal creates a bespoke plan for each patient.</p>
+        <div class="included-list">
+          <div class="included-item">Full digital smile design preview</div>
+          <div class="included-item">Veneers, bonding, whitening & more</div>
+          <div class="included-item">Customised to your facial aesthetics</div>
+          <div class="included-item">Long-lasting, natural results</div>
+        </div>
+        <a href="index.html#appointment" class="btn btn-primary" style="align-self:flex-start;">Book a Smile Consultation</a>
+      </div>
+    </div>
+
+    <div id="invisalign" class="service-detail reveal">
+      <div class="service-detail__visual"><span>😁</span><p>Invisalign</p></div>
+      <div class="service-detail__content">
+        <span class="section-label">Clear Aligners</span>
+        <h3 class="section-title" style="font-size:1.7rem;">Invisalign</h3>
+        <p style="color:var(--color-text-muted);line-height:1.8;">Invisalign uses a series of custom-made clear aligners that gradually shift your teeth into the desired position — without metal brackets or wires. They're virtually invisible, removable, and comfortable, making them the ideal choice for adults and teens seeking a discreet orthodontic solution.</p>
+        <div class="included-list">
+          <div class="included-item">Virtually invisible aligners</div>
+          <div class="included-item">Removable — eat what you want</div>
+          <div class="included-item">Certified Invisalign provider</div>
+          <div class="included-item">Digital treatment planning included</div>
+        </div>
+        <a href="index.html#appointment" class="btn btn-primary" style="align-self:flex-start;">Book Free Scan</a>
+      </div>
+    </div>
+
+    <div id="cleaning" class="service-detail reveal">
+      <div class="service-detail__visual"><span>🌿</span><p>Dental Cleaning</p></div>
+      <div class="service-detail__content">
+        <span class="section-label">Preventive Care</span>
+        <h3 class="section-title" style="font-size:1.7rem;">Dental Cleaning</h3>
+        <p style="color:var(--color-text-muted);line-height:1.8;">Professional cleaning (prophylaxis) removes plaque, tartar, and stains that cause gum disease and cavities — even with excellent home care, only a dentist can remove hardened deposits. We recommend professional cleaning every 6 months to maintain optimal oral health.</p>
+        <div class="included-list">
+          <div class="included-item">Ultrasonic scaling &amp; polishing</div>
+          <div class="included-item">Plaque and tartar removal</div>
+          <div class="included-item">Fluoride treatment included</div>
+          <div class="included-item">Oral hygiene coaching provided</div>
+        </div>
+        <a href="index.html#appointment" class="btn btn-primary" style="align-self:flex-start;">Book Cleaning Session</a>
+      </div>
+    </div>
+
+    <div id="braces" class="service-detail reveal">
+      <div class="service-detail__visual"><span>😬</span><p>Braces</p></div>
+      <div class="service-detail__content">
+        <span class="section-label">Orthodontics</span>
+        <h3 class="section-title" style="font-size:1.7rem;">Dental Braces</h3>
+        <p style="color:var(--color-text-muted);line-height:1.8;">Traditional metal braces and more discreet ceramic braces are both available at our clinic. Ideal for correcting crowded teeth, gaps, overbites, and underbites in children, teens, and adults. Our orthodontic treatment ensures beautifully aligned teeth and long-term oral health.</p>
+        <div class="included-list">
+          <div class="included-item">Metal and ceramic options available</div>
+          <div class="included-item">Suitable for all ages</div>
+          <div class="included-item">Monthly monitoring appointments</div>
+          <div class="included-item">Retainer provided after treatment</div>
+        </div>
+        <a href="index.html#appointment" class="btn btn-primary" style="align-self:flex-start;">Book Orthodontic Consult</a>
+      </div>
+    </div>
+
+    <div id="extraction" class="service-detail reveal">
+      <div class="service-detail__visual"><span>🔬</span><p>Tooth Extraction</p></div>
+      <div class="service-detail__content">
+        <span class="section-label">Oral Surgery</span>
+        <h3 class="section-title" style="font-size:1.7rem;">Tooth Extraction</h3>
+        <p style="color:var(--color-text-muted);line-height:1.8;">When a tooth is severely damaged, decayed, or impacted (commonly wisdom teeth), extraction may be the best course of action. Dr. Aanchal performs extractions with minimal discomfort using local anaesthesia, ensuring a calm and safe experience with thorough aftercare guidance.</p>
+        <div class="included-list">
+          <div class="included-item">Simple and surgical extractions</div>
+          <div class="included-item">Wisdom tooth removal available</div>
+          <div class="included-item">Minimal discomfort technique</div>
+          <div class="included-item">Full aftercare instructions provided</div>
+        </div>
+        <a href="index.html#appointment" class="btn btn-primary" style="align-self:flex-start;">Book This Treatment</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- CTA -->
+<section style="background:linear-gradient(135deg,#1a1210,#2d1f14);padding:80px 0;text-align:center;">
+  <div class="container">
+    <h2 class="section-title" style="color:#fff;margin-bottom:16px;">Not Sure Which Treatment <em>You Need?</em></h2>
+    <p style="color:rgba(255,255,255,0.65);max-width:480px;margin:0 auto 32px;">Book a free initial consultation — Dr. Aanchal will assess your oral health and recommend the best treatment plan.</p>
+    <a href="index.html#appointment" class="btn btn-primary">Get a Free Consultation</a>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer" role="contentinfo">
+  <div class="container">
+    <div class="footer__top">
+      <div>
+        <div class="footer__brand-name">Dr. Aanchal</div>
+        <span class="footer__brand-tagline">Creating Confident Smiles</span>
+        <p class="footer__brand-desc">Advanced cosmetic and general dentistry in a modern, caring environment.</p>
+        <div class="footer__social"><a href="#" class="social-link">f</a><a href="#" class="social-link">in</a><a href="#" class="social-link">tw</a></div>
+      </div>
+      <div>
+        <h4 class="footer__col-title">Quick Links</h4>
+        <ul class="footer__links"><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="services.html">Services</a></li><li><a href="gallery.html">Gallery</a></li><li><a href="blog.html">Blog</a></li><li><a href="contact.html">Contact</a></li></ul>
+      </div>
+      <div>
+        <h4 class="footer__col-title">Treatments</h4>
+        <ul class="footer__links"><li><a href="#whitening">Teeth Whitening</a></li><li><a href="#implants">Dental Implants</a></li><li><a href="#rootcanal">Root Canal</a></li><li><a href="#makeover">Smile Makeover</a></li><li><a href="#invisalign">Invisalign</a></li><li><a href="#braces">Braces</a></li></ul>
+      </div>
+      <div>
+        <h4 class="footer__col-title">Contact</h4>
+        <ul class="footer__links" style="gap:14px;"><li style="color:rgba(255,255,255,0.5);font-size:0.88rem;">📍 Sector 12, New Delhi</li><li><a href="tel:+919876500000" style="color:rgba(255,255,255,0.5);font-size:0.88rem;">📞 +91 98765 XXXXX</a></li><li><a href="mailto:hello@draanchal.in" style="color:rgba(255,255,255,0.5);font-size:0.88rem;">✉️ hello@draanchal.in</a></li></ul>
+      </div>
+    </div>
+    <div class="footer__bottom"><span>&copy; 2026 Dr. Aanchal Dental Clinic. All rights reserved.</span></div>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
