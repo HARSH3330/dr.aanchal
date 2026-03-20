@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Explore all dental services offered by Dr. Aanchal — teeth whitening, implants, root canal, smile makeover, Invisalign, braces, cleaning, and more." />
-  <title>Dental Services | Dr. Aanchal Dental Clinic</title>
+  <meta name="description" content="Explore the comprehensive medical services offered by Dr. Aanchal Agarwal, including diabetes management, thyroid care, fever treatment, and emergency care." />
+  <title>Medical Services | Dr. Aanchal Agarwal – General Physician</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="stylesheet" href="assets/css/styles.css" />
@@ -29,7 +29,10 @@
   <div class="navbar__inner">
     <a href="index.html" class="navbar__logo" aria-label="Dr. Aanchal Dental Clinic home">
       <div class="navbar__logo-icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2C9 2 6 4 6 7c0 2 .5 3.5 1 5 .5 1.5 1 3 1 5 0 1.5.5 3 2 3s2-1.5 2-3c0-.5.2-1 .5-1 .3 0 .5.5.5 1 0 1.5.5 3 2 3s2-1.5 2-3c0-2 .5-3.5 1-5 .5-1.5 1-3 1-5 0-3-3-5-6-5z"/></svg></div>
-      <div class="navbar__logo-text"><span>Dr. Aanchal</span><span>Dental Clinic</span></div>
+      <div class="navbar__logo-text">
+        <span>Dr. Aanchal</span>
+        <span>Medical Clinic</span>
+      </div>
     </a>
     <ul class="navbar__nav" role="list">
       <li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li>
@@ -48,24 +51,24 @@
 <!-- Page Hero -->
 <section class="page-hero" aria-label="Services hero">
   <div class="container">
-    <span class="page-hero__label">Our Treatments</span>
-    <h1 class="page-hero__title">Comprehensive Dental Services</h1>
-    <p class="page-hero__desc">From routine cleaning to complete smile transformations — all under one roof with Dr. Aanchal.</p>
+      <span class="page-hero__label">Expert Medical Care</span>
+      <h1 class="page-hero__title">Comprehensive <em>Services</em></h1>
+      <p class="page-hero__desc">Providing advanced, evidence-based medical solutions tailored to your unique health needs.</p>
   </div>
 </section>
 
 <!-- Services Quick Nav -->
 <section style="background:var(--color-secondary);padding:24px 0;border-bottom:1px solid var(--color-border);">
   <div class="container">
-    <div style="display:flex;flex-wrap:wrap;gap:12px;justify-content:center;">
-      <a href="#whitening" class="btn btn-outline btn-sm">Teeth Whitening</a>
-      <a href="#implants" class="btn btn-outline btn-sm">Dental Implants</a>
-      <a href="#rootcanal" class="btn btn-outline btn-sm">Root Canal</a>
-      <a href="#makeover" class="btn btn-outline btn-sm">Smile Makeover</a>
-      <a href="#invisalign" class="btn btn-outline btn-sm">Invisalign</a>
-      <a href="#cleaning" class="btn btn-outline btn-sm">Dental Cleaning</a>
-      <a href="#braces" class="btn btn-outline btn-sm">Braces</a>
-      <a href="#extraction" class="btn btn-outline btn-sm">Tooth Extraction</a>
+    <div class="services-nav reveal">
+      <a href="#fever" class="services-nav__link">Fever &amp; Infections</a>
+      <a href="#diabetes" class="services-nav__link">Diabetes</a>
+      <a href="#hypertension" class="services-nav__link">Hypertension</a>
+      <a href="#thyroid" class="services-nav__link">Thyroid</a>
+      <a href="#respiratory" class="services-nav__link">Respiratory</a>
+      <a href="#digestive" class="services-nav__link">Digestive</a>
+      <a href="#checkup" class="services-nav__link">Checkups</a>
+      <a href="#emergency" class="services-nav__link">Emergency</a>
     </div>
   </div>
 </section>
@@ -79,133 +82,141 @@
       <div class="divider divider--center" aria-hidden="true"></div>
     </div>
 
-    <div id="whitening" class="service-detail reveal">
-      <div class="service-detail__visual"><span>✨</span><p>Teeth Whitening</p></div>
+    <!-- Service 1: Fever & Infections -->
+    <section id="fever" class="service-detail reveal">
+      <div class="service-detail__visual"><span>🌡️</span><p>Fever Care</p></div>
       <div class="service-detail__content">
-        <span class="section-label">Cosmetic Dentistry</span>
-        <h3 class="section-title" style="font-size:1.7rem;">Teeth Whitening</h3>
-        <p style="color:var(--color-text-muted);line-height:1.8;">Our professional in-chair teeth whitening treatment uses pharmaceutical-grade bleaching agents to safely lighten your enamel by up to 8 shades — in just one session. Safe, fast, and long-lasting results that over-the-counter kits simply cannot match.</p>
+        <span class="section-label">General Medicine</span>
+        <h3 class="section-title" style="font-size:1.7rem;">Fever &amp; <em>Infections</em></h3>
+        <p style="color:var(--color-text-muted);line-height:1.8;">Accurate diagnosis and treatment for all types of fevers and infections, including viral, bacterial, and seasonal issues. We focus on rapid recovery and immune support.</p>
         <div class="included-list">
-          <div class="included-item">Results in a single 60-minute session</div>
-          <div class="included-item">Up to 8 shades lighter</div>
-          <div class="included-item">Enamel-safe FDA-approved formula</div>
-          <div class="included-item">Take-home maintenance kit included</div>
-        </div>
-        <a href="index.html#appointment" class="btn btn-primary" style="align-self:flex-start;">Book This Treatment</a>
-      </div>
-    </div>
-
-    <div id="implants" class="service-detail reveal">
-      <div class="service-detail__visual"><span>🦷</span><p>Dental Implants</p></div>
-      <div class="service-detail__content">
-        <span class="section-label">Restorative Dentistry</span>
-        <h3 class="section-title" style="font-size:1.7rem;">Dental Implants</h3>
-        <p style="color:var(--color-text-muted);line-height:1.8;">Dental implants are the gold standard for replacing missing teeth. A titanium post is surgically placed into the jawbone, acting as an artificial root. A custom crown is then attached, giving you a natural-looking, permanent tooth that functions exactly like the real thing.</p>
-        <div class="included-list">
-          <div class="included-item">Permanent, lifetime solution</div>
-          <div class="included-item">Natural look and feel</div>
-          <div class="included-item">Preserves jawbone structure</div>
-          <div class="included-item">No impact on adjacent teeth</div>
+          <div class="included-item">Viral &amp; Bacterial Fever Care</div>
+          <div class="included-item">Seasonal Infection Management</div>
+          <div class="included-item">Diagnostic Blood Testing</div>
+          <div class="included-item">Immune System Recovery Plans</div>
         </div>
         <a href="index.html#appointment" class="btn btn-primary" style="align-self:flex-start;">Book Consultation</a>
       </div>
-    </div>
+    </section>
 
-    <div id="rootcanal" class="service-detail reveal">
-      <div class="service-detail__visual"><span>🏥</span><p>Root Canal Treatment</p></div>
+    <!-- Service 2: Diabetes Management -->
+    <section id="diabetes" class="service-detail reveal">
+      <div class="service-detail__visual"><span>📊</span><p>Diabetes Care</p></div>
       <div class="service-detail__content">
-        <span class="section-label">Endodontics</span>
-        <h3 class="section-title" style="font-size:1.7rem;">Root Canal Treatment</h3>
-        <p style="color:var(--color-text-muted);line-height:1.8;">Root canal treatment removes infected pulp tissue from inside your tooth, eliminating pain and infection while saving your natural tooth. With modern anaesthesia and rotary endodontic instruments, the procedure is virtually painless and often completed in one visit.</p>
+        <span class="section-label">Chronic Care</span>
+        <h3 class="section-title" style="font-size:1.7rem;">Diabetes <em>Management</em></h3>
+        <p style="color:var(--color-text-muted);line-height:1.8;">Comprehensive sugar control plans combining modern medical therapies with lifestyle and dietary guidance to prevent long-term complications.</p>
         <div class="included-list">
-          <div class="included-item">Saves the natural tooth</div>
-          <div class="included-item">Modern rotary endodontic technique</div>
-          <div class="included-item">Often completed in a single visit</div>
-          <div class="included-item">Post-procedure crown placement included</div>
+          <div class="included-item">HbA1C Monitoring &amp; Control</div>
+          <div class="included-item">Personalized Diet &amp; Exercise Plans</div>
+          <div class="included-item">Insulin &amp; Medication Adjustment</div>
+          <div class="included-item">Regular Health Screenings</div>
         </div>
-        <a href="index.html#appointment" class="btn btn-primary" style="align-self:flex-start;">Book This Treatment</a>
+        <a href="index.html#appointment" class="btn btn-primary" style="align-self:flex-start;">Book Consultation</a>
       </div>
-    </div>
+    </section>
 
-    <div id="makeover" class="service-detail reveal">
-      <div class="service-detail__visual"><span>💎</span><p>Smile Makeover</p></div>
+    <!-- Service 3: Hypertension -->
+    <section id="hypertension" class="service-detail reveal">
+      <div class="service-detail__visual"><span>🫀</span><p>BP Control</p></div>
       <div class="service-detail__content">
-        <span class="section-label">Smile Design</span>
-        <h3 class="section-title" style="font-size:1.7rem;">Smile Makeover</h3>
-        <p style="color:var(--color-text-muted);line-height:1.8;">A smile makeover is a carefully curated combination of cosmetic dental procedures — porcelain veneers, teeth whitening, dental bonding, gum contouring, and crowns — specifically designed to give you your dream smile. Dr. Aanchal creates a bespoke plan for each patient.</p>
+        <span class="section-label">Heart Health</span>
+        <h3 class="section-title" style="font-size:1.7rem;">Hypertension <em>Management</em></h3>
+        <p style="color:var(--color-text-muted);line-height:1.8;">Expert management of high blood pressure to protect your heart, brain, and kidneys through medication and habit modification.</p>
         <div class="included-list">
-          <div class="included-item">Full digital smile design preview</div>
-          <div class="included-item">Veneers, bonding, whitening & more</div>
-          <div class="included-item">Customised to your facial aesthetics</div>
-          <div class="included-item">Long-lasting, natural results</div>
+          <div class="included-item">Regular BP Monitoring</div>
+          <div class="included-item">Cardiovascular Risk Assessment</div>
+          <div class="included-item">Sodium-Low Diet Guidance</div>
+          <div class="included-item">Stress Management Support</div>
         </div>
-        <a href="index.html#appointment" class="btn btn-primary" style="align-self:flex-start;">Book a Smile Consultation</a>
+        <a href="index.html#appointment" class="btn btn-primary" style="align-self:flex-start;">Book Consultation</a>
       </div>
-    </div>
+    </section>
 
-    <div id="invisalign" class="service-detail reveal">
-      <div class="service-detail__visual"><span>😁</span><p>Invisalign</p></div>
+    <!-- Service 4: Thyroid -->
+    <section id="thyroid" class="service-detail reveal">
+      <div class="service-detail__visual"><span>🧪</span><p>Thyroid Care</p></div>
       <div class="service-detail__content">
-        <span class="section-label">Clear Aligners</span>
-        <h3 class="section-title" style="font-size:1.7rem;">Invisalign</h3>
-        <p style="color:var(--color-text-muted);line-height:1.8;">Invisalign uses a series of custom-made clear aligners that gradually shift your teeth into the desired position — without metal brackets or wires. They're virtually invisible, removable, and comfortable, making them the ideal choice for adults and teens seeking a discreet orthodontic solution.</p>
+        <span class="section-label">Endocrine Health</span>
+        <h3 class="section-title" style="font-size:1.7rem;">Thyroid <em>Disorders</em></h3>
+        <p style="color:var(--color-text-muted);line-height:1.8;">Hormonal balance restoration for hyperthyroidism and hypothyroidism to improve your metabolism, energy, and mood.</p>
         <div class="included-list">
-          <div class="included-item">Virtually invisible aligners</div>
-          <div class="included-item">Removable — eat what you want</div>
-          <div class="included-item">Certified Invisalign provider</div>
-          <div class="included-item">Digital treatment planning included</div>
+          <div class="included-item">T3, T4, TSH Level Testing</div>
+          <div class="included-item">Hormone Replacement Therapy</div>
+          <div class="included-item">Weight &amp; Metabolism Support</div>
+          <div class="included-item">Continuous Monitoring</div>
         </div>
-        <a href="index.html#appointment" class="btn btn-primary" style="align-self:flex-start;">Book Free Scan</a>
+        <a href="index.html#appointment" class="btn btn-primary" style="align-self:flex-start;">Book Consultation</a>
       </div>
-    </div>
+    </section>
 
-    <div id="cleaning" class="service-detail reveal">
-      <div class="service-detail__visual"><span>🌿</span><p>Dental Cleaning</p></div>
+    <!-- Service 5: Respiratory -->
+    <section id="respiratory" class="service-detail reveal">
+      <div class="service-detail__visual"><span>🫁</span><p>Respiratory Care</p></div>
       <div class="service-detail__content">
-        <span class="section-label">Preventive Care</span>
-        <h3 class="section-title" style="font-size:1.7rem;">Dental Cleaning</h3>
-        <p style="color:var(--color-text-muted);line-height:1.8;">Professional cleaning (prophylaxis) removes plaque, tartar, and stains that cause gum disease and cavities — even with excellent home care, only a dentist can remove hardened deposits. We recommend professional cleaning every 6 months to maintain optimal oral health.</p>
+        <span class="section-label">Pulmonary Care</span>
+        <h3 class="section-title" style="font-size:1.7rem;">Respiratory <em>Issues</em></h3>
+        <p style="color:var(--color-text-muted);line-height:1.8;">Treatment for cough, cold, asthma, and chronic bronchitis with a focus on clearing pathways and restoring breathing capacity.</p>
         <div class="included-list">
-          <div class="included-item">Ultrasonic scaling &amp; polishing</div>
-          <div class="included-item">Plaque and tartar removal</div>
-          <div class="included-item">Fluoride treatment included</div>
-          <div class="included-item">Oral hygiene coaching provided</div>
+          <div class="included-item">Asthma &amp; Bronchitis Care</div>
+          <div class="included-item">Nebulization Therapy</div>
+          <div class="included-item">Lung Function Assessment</div>
+          <div class="included-item">Allergy Management</div>
         </div>
-        <a href="index.html#appointment" class="btn btn-primary" style="align-self:flex-start;">Book Cleaning Session</a>
+        <a href="index.html#appointment" class="btn btn-primary" style="align-self:flex-start;">Book Consultation</a>
       </div>
-    </div>
+    </section>
 
-    <div id="braces" class="service-detail reveal">
-      <div class="service-detail__visual"><span>😬</span><p>Braces</p></div>
+    <!-- Service 6: Digestive -->
+    <section id="digestive" class="service-detail reveal">
+      <div class="service-detail__visual"><span>🍱</span><p>Digestive Health</p></div>
       <div class="service-detail__content">
-        <span class="section-label">Orthodontics</span>
-        <h3 class="section-title" style="font-size:1.7rem;">Dental Braces</h3>
-        <p style="color:var(--color-text-muted);line-height:1.8;">Traditional metal braces and more discreet ceramic braces are both available at our clinic. Ideal for correcting crowded teeth, gaps, overbites, and underbites in children, teens, and adults. Our orthodontic treatment ensures beautifully aligned teeth and long-term oral health.</p>
+        <span class="section-label">Gastro Care</span>
+        <h3 class="section-title" style="font-size:1.7rem;">Digestive <em>Issues</em></h3>
+        <p style="color:var(--color-text-muted);line-height:1.8;">Comprehensive management of stomach ulcers, liver issues, and gastrointestinal discomfort for optimal nutrient absorption.</p>
         <div class="included-list">
-          <div class="included-item">Metal and ceramic options available</div>
-          <div class="included-item">Suitable for all ages</div>
-          <div class="included-item">Monthly monitoring appointments</div>
-          <div class="included-item">Retainer provided after treatment</div>
+          <div class="included-item">Stomach &amp; Ulcer Treatment</div>
+          <div class="included-item">Liver Function Support</div>
+          <div class="included-item">Acid Reflux (GERD) Relief</div>
+          <div class="included-item">Gut Health Counseling</div>
         </div>
-        <a href="index.html#appointment" class="btn btn-primary" style="align-self:flex-start;">Book Orthodontic Consult</a>
+        <a href="index.html#appointment" class="btn btn-primary" style="align-self:flex-start;">Book Consultation</a>
       </div>
-    </div>
+    </section>
 
-    <div id="extraction" class="service-detail reveal">
-      <div class="service-detail__visual"><span>🔬</span><p>Tooth Extraction</p></div>
+    <!-- Service 7: Checkup -->
+    <section id="checkup" class="service-detail reveal">
+      <div class="service-detail__visual"><span>🩺</span><p>Health Checkup</p></div>
       <div class="service-detail__content">
-        <span class="section-label">Oral Surgery</span>
-        <h3 class="section-title" style="font-size:1.7rem;">Tooth Extraction</h3>
-        <p style="color:var(--color-text-muted);line-height:1.8;">When a tooth is severely damaged, decayed, or impacted (commonly wisdom teeth), extraction may be the best course of action. Dr. Aanchal performs extractions with minimal discomfort using local anaesthesia, ensuring a calm and safe experience with thorough aftercare guidance.</p>
+        <span class="section-label">Preventive Medicine</span>
+        <h3 class="section-title" style="font-size:1.7rem;">General Health <em>Checkups</em></h3>
+        <p style="color:var(--color-text-muted);line-height:1.8;">Full body screenings and vital monitoring to ensure early detection of health issues and maintain peak physical condition.</p>
         <div class="included-list">
-          <div class="included-item">Simple and surgical extractions</div>
-          <div class="included-item">Wisdom tooth removal available</div>
-          <div class="included-item">Minimal discomfort technique</div>
-          <div class="included-item">Full aftercare instructions provided</div>
+          <div class="included-item">Comprehensive Blood Panels</div>
+          <div class="included-item">Vital Sign Assessment</div>
+          <div class="included-item">Preventive Health Strategy</div>
+          <div class="included-item">Age-Appropriate Screenings</div>
         </div>
-        <a href="index.html#appointment" class="btn btn-primary" style="align-self:flex-start;">Book This Treatment</a>
+        <a href="index.html#appointment" class="btn btn-primary" style="align-self:flex-start;">Book Consultation</a>
       </div>
-    </div>
+    </section>
+
+    <!-- Service 8: Emergency -->
+    <section id="emergency" class="service-detail reveal">
+      <div class="service-detail__visual"><span>🆘</span><p>Emergency Care</p></div>
+      <div class="service-detail__content">
+        <span class="section-label">Emergency Care</span>
+        <h3 class="section-title" style="font-size:1.7rem;">Emergency <em>Handling</em></h3>
+        <p style="color:var(--color-text-muted);line-height:1.8;">Rapid response and specialized treatment for critical medical cases including poisoning and snake bite management.</p>
+        <div class="included-list">
+          <div class="included-item">Snake Bite Treatment (ASV)</div>
+          <div class="included-item">Poison Ingestion Management</div>
+          <div class="included-item">Acute Condition Stabilization</div>
+          <div class="included-item">Priority Emergency Care</div>
+        </div>
+        <a href="index.html#appointment" class="btn btn-primary" style="align-self:flex-start;">Book Emergency Visit</a>
+      </div>
+    </section>
 
   </div>
 </section>
@@ -224,9 +235,9 @@
   <div class="container">
     <div class="footer__top">
       <div>
-        <div class="footer__brand-name">Dr. Aanchal</div>
-        <span class="footer__brand-tagline">Creating Confident Smiles</span>
-        <p class="footer__brand-desc">Advanced cosmetic and general dentistry in a modern, caring environment.</p>
+        <div class="footer__brand-name">Dr. Aanchal Agarwal</div>
+        <span class="footer__brand-tagline">Caring for Your Health, Every Step of the Way</span>
+        <p class="footer__brand-desc">Trusted general physician providing compassionate, evidence-based medical care in Bareilly.</p>
         <div class="footer__social"><a href="#" class="social-link">f</a><a href="#" class="social-link">in</a><a href="#" class="social-link">tw</a></div>
       </div>
       <div>
@@ -234,15 +245,15 @@
         <ul class="footer__links"><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="services.html">Services</a></li><li><a href="gallery.html">Gallery</a></li><li><a href="blog.html">Blog</a></li><li><a href="contact.html">Contact</a></li></ul>
       </div>
       <div>
-        <h4 class="footer__col-title">Treatments</h4>
-        <ul class="footer__links"><li><a href="#whitening">Teeth Whitening</a></li><li><a href="#implants">Dental Implants</a></li><li><a href="#rootcanal">Root Canal</a></li><li><a href="#makeover">Smile Makeover</a></li><li><a href="#invisalign">Invisalign</a></li><li><a href="#braces">Braces</a></li></ul>
+        <h4 class="footer__col-title">Services</h4>
+        <ul class="footer__links"><li><a href="#fever">Fever &amp; Infections</a></li><li><a href="#diabetes">Diabetes Care</a></li><li><a href="#hypertension">BP Management</a></li><li><a href="#emergency">Emergency Care</a></li><li><a href="#checkup">Full Body Checkup</a></li></ul>
       </div>
       <div>
         <h4 class="footer__col-title">Contact</h4>
-        <ul class="footer__links" style="gap:14px;"><li style="color:rgba(255,255,255,0.5);font-size:0.88rem;">📍 Sector 12, New Delhi</li><li><a href="tel:+919876500000" style="color:rgba(255,255,255,0.5);font-size:0.88rem;">📞 +91 98765 XXXXX</a></li><li><a href="mailto:hello@draanchal.in" style="color:rgba(255,255,255,0.5);font-size:0.88rem;">✉️ hello@draanchal.in</a></li></ul>
+        <ul class="footer__links" style="gap:14px;"><li style="color:rgba(255,255,255,0.5);font-size:0.88rem;">📍 6A, Model Town, Bareilly</li><li><a href="tel:+919876500000" style="color:rgba(255,255,255,0.5);font-size:0.88rem;">📞 +91 98765 XXXXX</a></li><li><a href="mailto:draanchalclinic@gmail.com" style="color:rgba(255,255,255,0.5);font-size:0.88rem;">✉️ draanchalclinic@gmail.com</a></li></ul>
       </div>
     </div>
-    <div class="footer__bottom"><span>&copy; 2026 Dr. Aanchal Dental Clinic. All rights reserved.</span></div>
+    <div class="footer__bottom"><span>&copy; 2026 Dr. Aanchal Agarwal Medical Clinic. All rights reserved.</span></div>
   </div>
 </footer>
 

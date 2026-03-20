@@ -1,15 +1,15 @@
-# Dental Clinic Website Architecture
+# Medical Clinic Website Architecture
 
 ## Project Overview
-This project is a modern, responsive website for a **Dental Clinic**.  
-The design should be **clean, medical-professional, premium, and minimal**, similar to modern dermatology/medical clinic websites.
+This project is a modern, responsive website for a **Medical Clinic** (General Physician & Internal Medicine).  
+The design is **clean, medical-professional, premium, and minimal**, tailored for trust and patient care.
 
 The goal is to:
 - Build trust with patients
-- Showcase dental services
+- Showcase medical services (General Physician, Emergency Care, Chronic Management)
 - Enable appointment booking
-- Provide educational content
-- Present the doctor and clinic professionally
+- Provide health education content
+- Present Dr. Aanchal Agarwal professionally
 
 The website should prioritize:
 - Clear hierarchy
@@ -49,19 +49,20 @@ Example:
 
 ## Global Layout
 
-Navbar  
-Hero Section  
-Services  
-About Doctor  
-Why Choose Us  
-Treatments / Procedures  
-Testimonials  
-Before / After Gallery  
-Appointment Booking  
-Blog / Education  
-FAQ  
-Contact  
-Footer
+Global Layout:
+- Navbar  
+- Hero Section  
+- Services (Internal Medicine)
+- About Doctor  
+- Why Choose Us  
+- Success Stories / Case Studies
+- Testimonials  
+- Gallery
+- Appointment Booking  
+- Health Blog / Education  
+- FAQ  
+- Contact  
+- Footer
 
 ---
 
@@ -71,14 +72,14 @@ Footer
 
 ### Hero Section
 - Large hero image
-- Doctor or dental treatment visual
+- Doctor or medical treatment visual
 - Heading
 - Subheading
 - CTA button
 - subtle floating animation
 
 Example:
-"Healthy Smiles Start Here"
+"Your Health, Our Priority"
 
 CTA:
 Book Appointment
@@ -92,11 +93,12 @@ Fade-in + parallax
 Grid layout showing main treatments
 
 Examples:
-- Teeth Whitening
-- Dental Implants
-- Root Canal Treatment
-- Smile Makeover
-- Invisalign
+- Fever & Infections
+- Diabetes Management
+- Hypertension (BP)
+- Thyroid Disorders
+- Respiratory Care
+- Emergency (Snake Bite/Poisoning)
 
 Each service card contains:
 Icon  
@@ -110,15 +112,15 @@ Hover scale + shadow
 ---
 
 ### About the Doctor
-Photo of the dentist  
+Photo of the doctor  
 Credentials  
 Experience  
 Short bio
 
 Include:
-Years of experience  
-Specialization  
-Certifications
+- Years of experience (6+)
+- Specialization (MBBS, MD Medicine)
+- Medical Education (Subharti, TMU)
 
 ---
 
@@ -182,12 +184,12 @@ Schedule Consultation
 ---
 
 ### Blog Section
-Dental education articles
+Health education articles
 
 Examples:
-- How to prevent cavities
-- Best oral hygiene practices
-- Benefits of teeth whitening
+- Managing Blood Sugar
+- Viral Fever Prevention
+- Emergency Snake Bite First Aid
 
 ---
 
@@ -195,9 +197,9 @@ Examples:
 Expandable accordion list
 
 Examples:
-- Does teeth whitening hurt?
-- How long does a dental implant last?
-- How often should I visit a dentist?
+- When should I see a GP?
+- What are emergency symptoms?
+- How to handle snake bites?
 
 ---
 

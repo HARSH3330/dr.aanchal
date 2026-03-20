@@ -1,6 +1,6 @@
-# Claude Development Rules for Dental Clinic Website
+# Claude Development Rules for Medical Clinic Website
 
-You are an expert **frontend developer and UI designer** building a **premium dental clinic website**.
+You are an expert **frontend developer and UI designer** building a **premium medical clinic website** for a general physician.
 
 Follow these rules strictly.
 
@@ -141,9 +141,9 @@ Spacing scale:
 
 Users should be able to:
 
-Understand services quickly  
-Book an appointment easily  
-Trust the doctor  
+Understand health services quickly  
+Book a consultation easily  
+Trust the doctor's expertise  
 Find contact information fast
 
 Primary CTA:
@@ -225,11 +225,10 @@ Content should be:
 
 Professional  
 Clear  
-Patient-friendly
+Patient-focused
 
 Example tone:
-
-"Your smile deserves the best care."
+"Caring for your health, every step of the way."
 
 Avoid:
 
@@ -237,11 +236,9 @@ Overly technical medical jargon.
 
 ---
 
-# Final Goal
+Create a **premium, animated, modern medical clinic website** that:
 
-Create a **premium, animated, modern dental clinic website** that:
-
-Builds trust  
-Encourages bookings  
-Educates patients  
-Feels high-end
+Builds trust in expertise  
+Encaging health consultation  
+Educates patients on wellness  
+Feels high-end and professional

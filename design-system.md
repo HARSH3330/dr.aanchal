@@ -1,15 +1,15 @@
-# Dental Clinic Website Design System
+# Medical Clinic Website Design System
 
 This document defines the **visual language, UI patterns, spacing, and component styling** that must be used consistently across the entire website.
 
-The goal is to create a **premium medical clinic website** similar to high-end dermatology or dental websites.
+The goal is to create a **premium medical clinic website** that feels expert, trustworthy, and caring.
 
 ---
 
 # Brand Identity
 
 Clinic Name:
-Dental Care by Dr. Aanchal
+Dr. Aanchal Agarwal Medical Clinic
 
 Tone:
 Professional
@@ -238,10 +238,11 @@ Medical themed
 
 Examples
 
-Tooth icon
-Smile icon
-Dental tools
-Medical cross
+Stethoscope
+Medical Cross
+Heart Rate
+First Aid Kit
+Medicine Bottle
 
 Icon size
 
@@ -261,9 +262,9 @@ Medical
 Preferred types:
 
 Doctor portrait
-Dental procedures
-Smiling patients
+Medical consultation
 Clinic interiors
+Patient wellness shots
 
 Avoid:
 
@@ -320,10 +321,10 @@ Example:
 Services Section
 
 Title  
-"Comprehensive Dental Treatments"
+"Comprehensive Medical Services"
 
 Description  
-"We provide modern dental solutions designed for comfort and long-term oral health."
+"Expert medical care specializing in chronic management, emergency treatment, and general wellness."
 
 Grid of service cards
 
@@ -336,7 +337,7 @@ Hero must include:
 Large headline  
 Supporting text  
 Call-to-action button  
-High-quality dental image
+High-quality medical clinic image
 
 Optional elements:
 
@@ -359,7 +360,7 @@ Review text
 
 Example review tone:
 
-"Dr. Aanchal made my dental experience completely painless and comfortable."
+"Dr. Aanchal's diagnosis was spot on. I felt much better after her treatment and her care is exceptional."
 
 ---
 
@@ -432,7 +433,7 @@ Every page should encourage this action.
 
 # Design Goal
 
-Create a website that feels like a **high-end dental clinic brand**.
+Create a website that feels like a **high-end medical clinic brand**.
 
 The user experience should feel:
 
