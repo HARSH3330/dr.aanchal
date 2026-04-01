@@ -36,9 +36,9 @@ jobs:
           echo "Validating critical files..."
           test -f "index.html" && echo "✓ index.html found" || (echo "✗ index.html missing" && exit 1)
           test -f "contact.html" && echo "✓ contact.html found" || (echo "✗ contact.html missing" && exit 1)
-          test -d "css" && echo "✓ css/ directory found" || (echo "✗ css/ directory missing" && exit 1)
-          test -d "js" && echo "✓ js/ directory found" || (echo "✗ js/ directory missing" && exit 1)
-          test -f "js/forms.js" && echo "✓ forms.js found" || (echo "✗ forms.js missing" && exit 1)
+          test -d "assets/css" && echo "✓ assets/css directory found" || (echo "✗ assets/css directory missing" && exit 1)
+          test -d "assets/js" && echo "✓ assets/js directory found" || (echo "✗ assets/js directory missing" && exit 1)
+          test -f "assets/js/main.js" && echo "✓ assets/js/main.js found" || (echo "✗ assets/js/main.js missing" && exit 1)
           echo ""
           echo "All critical files validated! ✓"
       
