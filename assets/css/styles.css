@@ -1733,11 +1733,16 @@ button, input, select, textarea {
 
 .footer__top {
   display: grid;
-  /* give the Services column more room and tighten the gutter */
-  grid-template-columns: 1fr 1fr 5fr 0.9fr;
-  gap: var(--sp-2);
+  grid-template-columns: 1.6fr 1fr 1fr;
+  gap: var(--sp-5);
   padding-bottom: var(--sp-5);
   border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+.footer__services {
+  padding: var(--sp-4) 0 var(--sp-3);
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+  margin-bottom: var(--sp-3);
 }
 
 .footer__brand-name {
