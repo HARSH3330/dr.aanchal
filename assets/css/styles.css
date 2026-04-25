@@ -2185,18 +2185,20 @@ button, input, select, textarea {
   padding: 0 var(--sp-3);
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   gap: 0;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
 }
 
 .trust-item {
   display: flex;
   align-items: center;
   gap: 10px;
-  padding: 8px 28px;
+  padding: 8px 20px;
   border-right: 1px solid var(--color-border);
-  flex-shrink: 0;
+  flex: 1;
+  min-width: 0;
+  white-space: nowrap;
 }
 
 .trust-item:last-child { border-right: none; }
