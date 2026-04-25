@@ -1,5 +1,5 @@
 /* ============================================================
-   DR. AANCHAL DENTAL CLINIC — MAIN JAVASCRIPT
+   DR. AANCHAL MEDICAL CLINIC — MAIN JAVASCRIPT
    ============================================================ */
 
 (function () {
@@ -131,27 +131,117 @@
     });
   }
 
-  /* ---- Appointment Form ---- */
+  /* ============================================================
+     APPOINTMENT FORM — Web3Forms Integration
+     Sends submissions to draanchal3.3@gmail.com
+     Free service, no backend needed.
+     Web3Forms access key is tied to the recipient email.
+     ============================================================ */
   function initForm() {
-    const form = document.getElementById('appointmentForm');
-    if (!form) return;
+    // Web3Forms free access key for draanchal3.3@gmail.com
+    // Get your key at https://web3forms.com (free, no login needed)
+    const WEB3FORMS_ACCESS_KEY = 'ae7e3c51-ff1c-4e27-b178-6dfe57ff4a61';
 
-    form.addEventListener('submit', function (e) {
-      e.preventDefault();
+    // Handle ALL forms with id="appointmentForm" on the page
+    document.querySelectorAll('#appointmentForm').forEach(function (form) {
+      form.addEventListener('submit', async function (e) {
+        e.preventDefault();
 
-      const btn = form.querySelector('button[type="submit"]');
-      const successMsg = document.getElementById('formSuccess');
+        const btn = form.querySelector('button[type="submit"]');
+        const successMsg = form.closest('div') ? form.closest('div').querySelector('#formSuccess') : null
+                        || document.getElementById('formSuccess');
 
-      btn.disabled = true;
-      btn.textContent = 'Sending…';
+        // --- Basic Validation ---
+        const nameField  = form.querySelector('[name="name"]');
+        const phoneField = form.querySelector('[name="phone"]');
+        const emailField = form.querySelector('[name="email"]');
 
-      setTimeout(() => {
-        form.style.display = 'none';
-        if (successMsg) {
-          successMsg.classList.add('visible');
+        if (nameField && !nameField.value.trim()) {
+          nameField.focus();
+          showFieldError(nameField, 'Please enter your full name.');
+          return;
         }
-      }, 1200);
+        if (phoneField && !phoneField.value.trim()) {
+          phoneField.focus();
+          showFieldError(phoneField, 'Please enter your phone number.');
+          return;
+        }
+        if (emailField && !emailField.value.trim()) {
+          emailField.focus();
+          showFieldError(emailField, 'Please enter your email address.');
+          return;
+        }
+
+        // --- Loading State ---
+        const originalText = btn.innerHTML;
+        btn.disabled = true;
+        btn.innerHTML = '⏳ Sending…';
+
+        // --- Build form data ---
+        const formData = new FormData(form);
+        formData.append('access_key', WEB3FORMS_ACCESS_KEY);
+        formData.append('subject', 'New Appointment Request – Dr. Aanchal Medical Clinic');
+        formData.append('from_name', 'Dr. Aanchal Website');
+        formData.append('replyto', emailField ? emailField.value : '');
+
+        try {
+          const response = await fetch('https://api.web3forms.com/submit', {
+            method: 'POST',
+            body: formData
+          });
+
+          const result = await response.json();
+
+          if (result.success) {
+            // Show success
+            form.style.display = 'none';
+            if (successMsg) {
+              successMsg.classList.add('visible');
+              successMsg.style.display = 'flex';
+            }
+          } else {
+            // API error
+            btn.disabled = false;
+            btn.innerHTML = originalText;
+            showFormError(form, 'Something went wrong. Please try again or call us directly at +91 9258840675.');
+          }
+        } catch (err) {
+          // Network error
+          btn.disabled = false;
+          btn.innerHTML = originalText;
+          showFormError(form, 'Could not connect. Please check your internet or call +91 9258840675.');
+        }
+      });
     });
+  }
+
+  function showFieldError(field, message) {
+    // Remove any existing error
+    const existing = field.parentElement.querySelector('.field-error');
+    if (existing) existing.remove();
+
+    const err = document.createElement('span');
+    err.className = 'field-error';
+    err.style.cssText = 'color:#e53e3e;font-size:0.78rem;margin-top:4px;display:block;';
+    err.textContent = message;
+    field.parentElement.appendChild(err);
+    field.style.borderColor = '#e53e3e';
+
+    field.addEventListener('input', function () {
+      err.remove();
+      field.style.borderColor = '';
+    }, { once: true });
+  }
+
+  function showFormError(form, message) {
+    let errBox = form.querySelector('.form-global-error');
+    if (!errBox) {
+      errBox = document.createElement('div');
+      errBox.className = 'form-global-error';
+      errBox.style.cssText = 'background:#fff5f5;border:1px solid #fc8181;color:#c53030;padding:12px 16px;border-radius:8px;font-size:0.88rem;margin-top:12px;';
+      form.appendChild(errBox);
+    }
+    errBox.textContent = message;
   }
 
   /* ---- Smooth scroll for anchor links ---- */
