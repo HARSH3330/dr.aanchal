@@ -2555,3 +2555,235 @@ button, input, select, textarea {
   font-weight: 600;
 }
 
+/* ============================================================
+   COMPREHENSIVE MOBILE RESPONSIVE FIXES
+   ============================================================ */
+
+/* ---- Trust Strip: scrollable on mobile ---- */
+@media (max-width: 768px) {
+  .trust-strip {
+    padding: 0;
+    border-bottom: 1px solid var(--color-border);
+  }
+  .trust-strip__inner {
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-type: x mandatory;
+    padding: 0 16px;
+    gap: 0;
+    /* hide scrollbar visually */
+    scrollbar-width: none;
+  }
+  .trust-strip__inner::-webkit-scrollbar { display: none; }
+  .trust-item {
+    flex: 0 0 auto;
+    padding: 12px 18px;
+    scroll-snap-align: start;
+    white-space: nowrap;
+  }
+  .trust-item__icon {
+    width: 30px;
+    height: 30px;
+    font-size: 0.8rem;
+  }
+  .trust-item__text strong { font-size: 0.8rem; }
+  .trust-item__text span  { font-size: 0.68rem; }
+}
+
+/* ---- Hero Section ---- */
+@media (max-width: 768px) {
+  .hero {
+    min-height: 100svh;
+  }
+  .hero__content {
+    padding-top: 100px;
+    padding-bottom: 60px;
+  }
+  .hero__inner {
+    grid-template-columns: 1fr;
+    gap: var(--sp-4);
+  }
+  .hero__image-col { display: none; }
+  .hero__title {
+    font-size: clamp(2rem, 8vw, 3rem);
+  }
+  .hero__subtitle {
+    font-size: 0.95rem;
+  }
+  .hero__actions {
+    flex-direction: column;
+    gap: var(--sp-2);
+    align-items: flex-start;
+  }
+  .hero__actions .btn {
+    width: 100%;
+    justify-content: center;
+  }
+  .hero__stats {
+    gap: var(--sp-3);
+    flex-wrap: wrap;
+  }
+  .hero__stat-divider { display: none; }
+  .hero__badge-row { display: none; }
+}
+
+/* ---- Services Grid ---- */
+@media (max-width: 768px) {
+  .services-grid {
+    grid-template-columns: 1fr !important;
+  }
+}
+@media (min-width: 480px) and (max-width: 768px) {
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+}
+
+/* ---- About Section ---- */
+@media (max-width: 900px) {
+  .about__grid {
+    grid-template-columns: 1fr !important;
+  }
+  .about__image-wrap img {
+    height: 320px !important;
+  }
+  .about__badge { display: none; }
+  .about__stats {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* ---- Why Choose Us Grid ---- */
+@media (max-width: 768px) {
+  .why-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+}
+@media (max-width: 480px) {
+  .why-grid {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+/* ---- Treatments Grid ---- */
+@media (max-width: 768px) {
+  .treatments-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+}
+@media (max-width: 480px) {
+  .treatments-grid {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+/* ---- Appointment Form ---- */
+@media (max-width: 768px) {
+  .appointment-grid {
+    grid-template-columns: 1fr !important;
+  }
+  .form-row {
+    grid-template-columns: 1fr !important;
+  }
+  .appointment-form {
+    padding: var(--sp-3) !important;
+  }
+}
+
+/* ---- Location / Contact Grid ---- */
+@media (max-width: 900px) {
+  .location-grid {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+/* ---- Footer ---- */
+@media (max-width: 1024px) {
+  .footer__top {
+    grid-template-columns: 1fr 1fr;
+    gap: var(--sp-4);
+  }
+}
+@media (max-width: 768px) {
+  .footer__top {
+    grid-template-columns: 1fr;
+    gap: var(--sp-4);
+  }
+  .footer__services .footer__links {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+  .footer__bottom {
+    flex-direction: column;
+    text-align: center;
+    gap: var(--sp-1);
+  }
+}
+@media (max-width: 480px) {
+  .footer__services .footer__links {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+/* ---- Outcomes / Results Grid ---- */
+@media (max-width: 768px) {
+  .outcomes-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+}
+@media (max-width: 480px) {
+  .outcomes-grid {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+/* ---- Testimonials Grid ---- */
+@media (max-width: 768px) {
+  .testimonials-grid {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+/* ---- FAQ ---- */
+@media (max-width: 768px) {
+  .faq-list {
+    gap: var(--sp-2);
+  }
+  .faq-question {
+    font-size: 0.9rem;
+    padding: 14px 16px;
+  }
+}
+
+/* ---- Sections Spacing ---- */
+@media (max-width: 768px) {
+  .section {
+    padding: 48px 0;
+  }
+  .section-title {
+    font-size: clamp(1.5rem, 6vw, 2.2rem);
+  }
+  .section-desc {
+    font-size: 0.95rem;
+  }
+  .container {
+    padding: 0 16px;
+  }
+}
+
+/* ---- WhatsApp float button ---- */
+@media (max-width: 480px) {
+  .whatsapp-float {
+    bottom: 16px;
+    right: 16px;
+    width: 50px;
+    height: 50px;
+  }
+  .whatsapp-float svg {
+    width: 22px;
+    height: 22px;
+  }
+}
+
+
